@@ -7,5 +7,7 @@
     <title></title>
 </head>
 <body>
+    <p>
+        <input id="Reset1" type="reset" value="reset" /></p>
     </body>
 </html>
