@@ -14,6 +14,10 @@
         <asp:Literal ID="Literal1" runat="server"></asp:Literal>
         <asp:Localize ID="Localize1" runat="server"></asp:Localize>
         <asp:CheckBox ID="CheckBox1" runat="server" />
+        <asp:GridView ID="GridView1" runat="server">
+        </asp:GridView>
+        <asp:ListView ID="ListView1" runat="server">
+        </asp:ListView>
     </form>
 </body>
 </html>
