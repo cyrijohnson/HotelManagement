@@ -7,7 +7,10 @@
     <title></title>
 </head>
 <body>
+    <form id="form1" runat="server">
     <p>
         <input id="Reset1" type="reset" value="reset" /></p>
+        <asp:LoginName ID="LoginName1" runat="server" />
+    </form>
     </body>
 </html>
