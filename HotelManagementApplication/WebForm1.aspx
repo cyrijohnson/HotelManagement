@@ -10,6 +10,10 @@
     <form id="form1" runat="server">
         <div>
         </div>
+        <asp:Timer ID="Timer1" runat="server">
+        </asp:Timer>
     </form>
+    <p>
+        <input id="Reset1" type="reset" value="reset" /></p>
 </body>
 </html>
