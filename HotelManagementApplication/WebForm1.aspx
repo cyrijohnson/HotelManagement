@@ -14,6 +14,7 @@
         <asp:LinkButton ID="LinkButton1" runat="server">LinkButton</asp:LinkButton>
         <asp:Literal ID="Literal1" runat="server"></asp:Literal>
         <asp:Localize ID="Localize1" runat="server"></asp:Localize>
+        <asp:HiddenField ID="HiddenField1" runat="server" />
     </form>
 </body>
 </html>
