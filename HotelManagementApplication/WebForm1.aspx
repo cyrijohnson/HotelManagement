@@ -11,6 +11,8 @@
     <p>
         <input id="Reset1" type="reset" value="reset" /></p>
         <asp:LoginName ID="LoginName1" runat="server" />
+        <asp:DynamicEntity ID="DynamicEntity1" runat="server">
+        </asp:DynamicEntity>
     </form>
     </body>
 </html>
