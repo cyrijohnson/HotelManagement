@@ -7,17 +7,5 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-        <asp:LinkButton ID="LinkButton1" runat="server">LinkButton</asp:LinkButton>
-        <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-        <asp:Localize ID="Localize1" runat="server"></asp:Localize>
-        <asp:CheckBox ID="CheckBox1" runat="server" />
-        <asp:GridView ID="GridView1" runat="server">
-        </asp:GridView>
-        <asp:ListView ID="ListView1" runat="server">
-        </asp:ListView>
-    </form>
-</body>
+    </body>
 </html>
