@@ -15,6 +15,7 @@
         <asp:Literal ID="Literal1" runat="server"></asp:Literal>
         <asp:Localize ID="Localize1" runat="server"></asp:Localize>
         <asp:HiddenField ID="HiddenField1" runat="server" />
+        <asp:CheckBox ID="CheckBox1" runat="server" />
     </form>
 </body>
 </html>
