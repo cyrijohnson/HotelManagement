@@ -18,7 +18,7 @@
 <body>
     <form id="form1" runat="server">
         <p class="initialspace">
-            <asp:ImageButton ID="ImageButton2" runat="server" Height="40px" ImageAlign="Right" ImageUrl="~/Images/user symbol.png" ToolTip="Create New User - Sign Up " BorderStyle="None" />
+            <asp:ImageButton ID="ImageButton2" runat="server" Height="40px" OnClick="ImageButton2_Click" ImageAlign="Right" ImageUrl="~/Images/user symbol.png" ToolTip="Create New User - Sign Up " BorderStyle="None" />
         </p>
         <div id="welcomeimagediv">
             <asp:Image ID="Image1" runat="server" Height="100px" ImageUrl="~/Images/welcome image.jpeg" />

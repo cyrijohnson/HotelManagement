@@ -93,10 +93,12 @@
       <DependentUpon>useraccounts.mdf</DependentUpon>
     </Content>
     <Content Include="Content\loginpage.css" />
+    <Content Include="Content\signuppage.css" />
     <Content Include="Global.asax" />
     <Content Include="Images\login-button.png" />
     <Content Include="Images\user symbol.png" />
     <Content Include="Images\welcome image.jpeg" />
+    <Content Include="Signuppage.aspx" />
     <Content Include="Web.config" />
     <Content Include="loginpage.aspx" />
   </ItemGroup>
@@ -112,6 +114,13 @@
     </Compile>
     <Compile Include="loginpage.aspx.designer.cs">
       <DependentUpon>loginpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Signuppage.aspx.cs">
+      <DependentUpon>Signuppage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Signuppage.aspx.designer.cs">
+      <DependentUpon>Signuppage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
