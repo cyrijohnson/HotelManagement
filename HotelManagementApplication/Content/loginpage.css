@@ -1,9 +1,18 @@
 ﻿body {
+    width: 800px; 
+    height: 600px; 
+    margin: 0px auto 0px auto;
+}
+#welcomeimagediv {
+    margin: 0px auto 0px auto; 
+    width: 283px;
     align-content:center;
 }
-#welcomeimage {
-    margin: 100px auto 50px auto;
-    width: 453px;
-    height: 300px;
-    align-self:center;
+#welcomeimage{
+    height:50px;
+    width:100px;
+    margin-top:auto;
+}
+.initial space{
+
 }
