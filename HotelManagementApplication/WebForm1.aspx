@@ -13,5 +13,8 @@
         <div>
         </div>
     </form>
+    <p>
+        
+        <img ID="welcomeimage" alt="" height="20" src="Images/welcome%20image.jpeg" /></p>
     </body>
 </html>

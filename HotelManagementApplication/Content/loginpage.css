@@ -3,8 +3,9 @@
     height: 600px; 
     margin: 0px auto 0px auto;
 }
-#Welcomeimage {
-    margin: 0px auto 0px auto;
+#welcomeimage {
+    margin: 50px auto 50px auto;
     width: 453px;
-    height: 146px;
+    height: 300px;
+    
 }
