@@ -25,18 +25,18 @@
                 &nbsp;
             </p>
             <p>
-                <asp:TextBox class="inputuandp" ID="TextBox1" runat="server" BorderStyle="Solid" Width="297px" BorderColor="#000066"></asp:TextBox>
+                <asp:TextBox class="inputuandp" ID="TextBox1" runat="server" placeholder="                         Username" BorderStyle="Solid" Width="297px" BorderColor="#000066" ToolTip="Enter Username" Font-Bold="True" Font-Size="Medium"></asp:TextBox>
             </p>
             <p class="uandpspace">
             </p>
             <p>
-                <asp:TextBox class="inputuandp"  ID="TextBox2" runat="server" BorderStyle="Solid" Width="297px" BorderColor="#000066"></asp:TextBox>
+                <asp:TextBox class="inputuandp" ID="TextBox2" runat="server" placeholder="                         Password" BorderStyle="Solid" Width="297px" BorderColor="#000066" ToolTip="Enter Password" Font-Bold="True" Font-Size="Medium"></asp:TextBox>
             </p>
             <p class="uandpspace">
             </p>
-            <asp:ImageButton id="ImageButton1" runat="server" Height="40px" ImageUrl="~/Images/login-button.png" OnClick="ImageButton1_Click" CssClass="auto-style1" Width="149px" />
+            <asp:ImageButton ID="ImageButton1" runat="server" Height="50px" ImageUrl="~/Images/login-button.png" OnClick="ImageButton1_Click" CssClass="auto-style1" Width="154px" />
         </div>
-        
+
     </form>
 </body>
 </html>

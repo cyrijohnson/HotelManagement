@@ -18,6 +18,8 @@
 }
 .inputuandp {
     border-radius: 1em;
+    height:30px;
+    align-content:center;
 }
 .uandpspace {
     margin-top: 35px;
