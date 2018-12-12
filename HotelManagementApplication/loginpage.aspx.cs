@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
 
 namespace HotelManagementApplication
 {
@@ -16,7 +17,11 @@ namespace HotelManagementApplication
 
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
-
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Cyril Johnson\source\repos\HotelManagementApplication\HotelManagementApplication\App_Data\useraccounts.mdf;Integrated Security=True");
+            SqlCommand cmd = new SqlCommand();
+            con.Open();
+            cmd.Connection = con;
+            cmd.CommandText = "";
         }
     }
 }

@@ -1,29 +1,43 @@
 ﻿body {
-    width: 800px; 
-    height: 600px; 
+    width: 800px;
+    height: 600px;
     margin: 0px auto 0px auto;
 }
+
 #welcomeimagediv {
-    margin: 0px auto 0px auto; 
+    margin: 0px auto 0px auto;
     width: 283px;
-    align-content:center;
+    align-content: center;
 }
-#welcomeimage{
-    height:50px;
-    width:100px;
-    margin-top:auto;
+
+#welcomeimage {
+    height: 50px;
+    width: 100px;
+    margin-top: auto;
 }
-.initialspace{
-    margin-top:100px;
+
+.initialspace {
+    margin-top: 100px;
+
 }
+
 .inputuandp {
     border-radius: 1em;
-    height:30px;
-    align-content:center;
+    height: 30px;
+    text-align: center;
 }
+
 .uandpspace {
     margin-top: 35px;
 }
-#ImageButton1{
-    align-self:center;
+
+#ImageButton1 {
+    align-self: center;
+}
+#ImageButton2{
+    margin-right:30;
+}
+#LinkButton1
+{
+    margin-left:85px;
 }
