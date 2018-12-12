@@ -7,14 +7,22 @@
 <head runat="server">
     <link rel="stylesheet" href="Content\loginpage.css" type="text/css" media="screen" />
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 153px;
+            height: 41px;
+            margin-left: 0px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
         </div>
-    </form>
+        
+        <img ID="welcomeimage" alt="" src="Images/welcome%20image.jpeg" class="auto-style1" /></form>
     <p>
         
-        <img ID="welcomeimage" alt="" height="20" src="Images/welcome%20image.jpeg" /></p>
+        &nbsp;</p>
     </body>
 </html>

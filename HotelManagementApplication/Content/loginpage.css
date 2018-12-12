@@ -1,11 +1,9 @@
 ﻿body {
-    width: 800px; 
-    height: 600px; 
-    margin: 0px auto 0px auto;
+    align-content:center;
 }
 #welcomeimage {
-    margin: 50px auto 50px auto;
+    margin: 100px auto 50px auto;
     width: 453px;
     height: 300px;
-    
+    align-self:center;
 }
