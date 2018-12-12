@@ -90,6 +90,7 @@
   <ItemGroup>
     <Content Include="Content\loginpage.css" />
     <Content Include="Global.asax" />
+    <Content Include="Images\login-button.png" />
     <Content Include="Images\welcome image.jpeg" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />

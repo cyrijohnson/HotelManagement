@@ -13,6 +13,15 @@
     width:100px;
     margin-top:auto;
 }
-.initial space{
-
+.initialspace{
+    margin-top:100px;
+}
+.inputuandp {
+    border-radius: 1em;
+}
+.uandpspace {
+    margin-top: 35px;
+}
+#ImageButton1{
+    align-self:center;
 }

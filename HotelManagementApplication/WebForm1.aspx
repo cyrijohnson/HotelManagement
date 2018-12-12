@@ -7,17 +7,36 @@
 <head runat="server">
     <link rel="stylesheet" href="Content\loginpage.css" type="text/css" media="screen" />
     <title></title>
- 
+
+    <style type="text/css">
+        .auto-style1 {
+            margin-left: 74px;
+        }
+    </style>
+
 </head>
 <body>
     <form id="form1" runat="server">
-        <p class="initial space">
-           
+        <p class="initialspace">
         </p>
         <div id="welcomeimagediv">
-             <asp:Image ID="Image1" runat="server" Height="100px" ImageUrl="~/Images/welcome image.jpeg" />
+            <asp:Image ID="Image1" runat="server" Height="100px" ImageUrl="~/Images/welcome image.jpeg" />
+            <p>
+                &nbsp;
+            </p>
+            <p>
+                <asp:TextBox class="inputuandp" ID="TextBox1" runat="server" BorderStyle="Solid" Width="297px" BorderColor="#000066"></asp:TextBox>
+            </p>
+            <p class="uandpspace">
+            </p>
+            <p>
+                <asp:TextBox class="inputuandp"  ID="TextBox2" runat="server" BorderStyle="Solid" Width="297px" BorderColor="#000066"></asp:TextBox>
+            </p>
+            <p class="uandpspace">
+            </p>
+            <asp:ImageButton id="ImageButton1" runat="server" Height="40px" ImageUrl="~/Images/login-button.png" OnClick="ImageButton1_Click" CssClass="auto-style1" Width="149px" />
         </div>
-       
+        
     </form>
 </body>
 </html>
