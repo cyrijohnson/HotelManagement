@@ -13,6 +13,7 @@
         <asp:LoginName ID="LoginName1" runat="server" />
         <asp:DynamicEntity ID="DynamicEntity1" runat="server">
         </asp:DynamicEntity>
+        <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
     </form>
     </body>
 </html>
