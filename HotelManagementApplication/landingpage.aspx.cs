@@ -25,7 +25,7 @@ namespace HotelManagementApplication
         }
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("~/Signuppage.aspx");
+            Response.Redirect("~/signuppage.aspx");
         }
         public void MsgBox(String ex, Page pg, Object obj)
         {

@@ -10,6 +10,6 @@
 namespace HotelManagementApplication {
     
     
-    public partial class signuppage {
+    public partial class WebForm1 {
     }
 }
