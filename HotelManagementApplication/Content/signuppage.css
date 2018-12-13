@@ -1,6 +1,11 @@
 ﻿body {
-    background-color: #0EBFE9;
+    width: 800px;
+    height: 600px;
+    margin: 0px auto 0px auto;
 }
 #Label1{
-    align-content:center;
+ 
+}
+#welcometext{
+   
 }

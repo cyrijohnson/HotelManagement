@@ -17,11 +17,13 @@
             &nbsp;</p>
         <p>
             &nbsp;</p>
+        <div id="welcometext">
+        <p>
+            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Arial Black" Font-Size="100" ForeColor="White" Text="Hey Welcome!!!"></asp:Label>
+        </p>
+            </div>
         <p>
             &nbsp;</p>
-        <p>
-            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Arial Black" Font-Size="XX-Large" ForeColor="White" Text="Hey Welcome!!!"></asp:Label>
-        </p>
     </form>
 </body>
 </html>
