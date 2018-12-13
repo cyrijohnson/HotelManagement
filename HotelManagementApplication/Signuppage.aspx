@@ -9,8 +9,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-        </div>
+        <div id="bodydiv">
+        
         <p>
             &nbsp;</p>
         <p>
@@ -19,11 +19,12 @@
             &nbsp;</p>
         <div id="welcometext">
         <p>
-            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Arial Black" Font-Size="100" ForeColor="White" Text="Hey Welcome!!!"></asp:Label>
+            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Arial Black" Font-Size="100pt" ForeColor="Black" Text="Hey Welcome!!!"></asp:Label>
         </p>
             </div>
         <p>
             &nbsp;</p>
+            </div>
     </form>
 </body>
 </html>

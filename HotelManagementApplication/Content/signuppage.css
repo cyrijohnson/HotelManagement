@@ -1,11 +1,13 @@
 ﻿body {
-    width: 800px;
-    height: 600px;
-    margin: 0px auto 0px auto;
+
+    background-color:aqua;
 }
 #Label1{
  
 }
 #welcometext{
    
+}
+#bodydiv{
+    background-color:aqua;
 }
