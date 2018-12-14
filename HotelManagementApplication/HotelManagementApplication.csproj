@@ -89,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Content\Aboutpage.css" />
     <Content Include="Content\loginpage.css" />
     <Content Include="Content\loginpagemain.css" />
     <Content Include="Content\signuppage.css" />
