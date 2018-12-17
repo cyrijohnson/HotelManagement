@@ -38,18 +38,18 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./user.html">
+            <a class="nav-link" href="./dashboard.html">
               <i class="material-icons">person</i>
               <p>User Profile</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./tables.html">
+            <a class="nav-link" href="./dashboard.html">
               <i class="material-icons">book</i>
               <p>Manage Bookings</p>
             </a>
           </li>
-          <li class="nav-item active  ">
+          <li class="nav-item ">
             <a class="nav-link" href="./dashboard.html">
               <i class="material-icons">printer</i>
               <p>Billing and Finance</p>
