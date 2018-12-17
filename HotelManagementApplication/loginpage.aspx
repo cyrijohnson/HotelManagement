@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V1</title>
+	<title>Member Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="icon" type="image/png" href="Images/26-512.png"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="Content/loginpage/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -38,10 +38,10 @@
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email">
+						<input class="input100"  type="text" name="email" placeholder="Email">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-envelope"  aria-hidden="true"></i>
+							
 						</span>
 					</div>
 
@@ -49,7 +49,7 @@
 						<input class="input100" type="password" name="pass" placeholder="Password">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
+							
 						</span>
 					</div>
 					
@@ -71,7 +71,7 @@
 					<div class="text-center p-t-136">
 						<a class="txt2" href="#">
 							Create your Account
-							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+							
 						</a>
 					</div>
 				</form>

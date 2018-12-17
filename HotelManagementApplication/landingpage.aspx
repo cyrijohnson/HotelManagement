@@ -57,7 +57,7 @@
         <div class="mx-auto text-center">
           <h1 class="mx-auto my-0 text-uppercase">iSoft</h1>
           <h2 class="text-white-50 mx-auto mt-2 mb-5">An intelligent, responsive, easy-to-use ERP software for Hotel Management.</h2>
-          <a href="loginsignup.aspx" class="btn btn-primary js-scroll-trigger">Get Started</a>
+          <a href="loginpage.aspx" class="btn btn-primary js-scroll-trigger">Get Started</a>
         </div>
       </div>
     </header>

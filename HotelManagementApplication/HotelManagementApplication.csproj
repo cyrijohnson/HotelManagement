@@ -204,6 +204,7 @@
     <Content Include="Content\loginpage\main.css" />
     <Content Include="Content\loginpage\util.css" />
     <Content Include="Global.asax" />
+    <Content Include="Images\26-512.png" />
     <Content Include="Images\bg-masthead.jpg" />
     <Content Include="Images\bg.jpg" />
     <Content Include="Images\img-01.png" />
