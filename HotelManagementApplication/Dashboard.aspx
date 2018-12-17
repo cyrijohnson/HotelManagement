@@ -49,6 +49,12 @@
               <p>Manage Bookings</p>
             </a>
           </li>
+          <li class="nav-item active  ">
+            <a class="nav-link" href="./dashboard.html">
+              <i class="material-icons">printer</i>
+              <p>Billing and Finance</p>
+            </a>
+          </li>
           <li class="nav-item ">
             <a class="nav-link" href="./typography.html">
               <i class="material-icons">poll</i>
