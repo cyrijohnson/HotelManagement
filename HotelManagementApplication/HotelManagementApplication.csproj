@@ -193,6 +193,8 @@
     <Content Include="Contacts.aspx" />
     <Content Include="Content\About\Aboutpage.css" />
     <Content Include="Content\Contact\contact.css" />
+    <Content Include="Content\Dashboard\material-dashboard.css" />
+    <Content Include="Content\Help\Help.css" />
     <Content Include="Content\loginpage.css" />
     <Content Include="Content\loginpagemain.css" />
     <Content Include="Content\loginpage\animate.css" />
@@ -203,16 +205,27 @@
     <Content Include="Content\loginsignup.css" />
     <Content Include="Content\loginpage\main.css" />
     <Content Include="Content\loginpage\util.css" />
+    <Content Include="Dashboard.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Help.aspx" />
     <Content Include="Images\26-512.png" />
     <Content Include="Images\bg-masthead.jpg" />
     <Content Include="Images\bg.jpg" />
     <Content Include="Images\img-01.png" />
     <Content Include="Images\login-button.png" />
+    <Content Include="Images\sidebar-2.jpg" />
     <Content Include="Images\user symbol.png" />
     <Content Include="Images\welcome image.jpeg" />
     <Content Include="loginpage.aspx" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\dashboard\bootstrap-material-design.min.js" />
+    <Content Include="Scripts\dashboard\bootstrap-notify.js" />
+    <Content Include="Scripts\dashboard\chartist.min.js" />
+    <Content Include="Scripts\dashboard\demo.js" />
+    <Content Include="Scripts\dashboard\jquery.min.js" />
+    <Content Include="Scripts\dashboard\material-dashboard.js" />
+    <Content Include="Scripts\dashboard\perfect-scrollbar.jquery.min.js" />
+    <Content Include="Scripts\dashboard\popper.min.js" />
     <Content Include="Scripts\jquery-3.2.1.min.js" />
     <Content Include="Scripts\main.js" />
     <Content Include="Scripts\popper.js" />
@@ -237,8 +250,22 @@
     <Compile Include="Contacts.aspx.designer.cs">
       <DependentUpon>Contacts.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
     </Compile>
     <Compile Include="loginpage.aspx.cs">
       <DependentUpon>loginpage.aspx</DependentUpon>

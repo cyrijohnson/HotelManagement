@@ -69,7 +69,7 @@
 					</div>
 
 					<div class="text-center p-t-136">
-						<a class="txt2" href="#">
+						<a class="txt2" href="Dashboard.aspx">
 							Create your Account
 							
 						</a>

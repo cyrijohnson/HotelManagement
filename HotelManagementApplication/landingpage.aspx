@@ -44,7 +44,7 @@
               <a class="nav-link js-scroll-trigger" href="..">Help</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="..">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="/Contacts.aspx">Contact</a>
             </li>
           </ul>
         </div>
