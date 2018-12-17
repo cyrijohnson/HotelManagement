@@ -38,10 +38,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
+              <a  class="nav-link js-scroll-trigger" href="landingpage.aspx">Home</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="/About.aspx">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="..">Help</a>
+              <a class="nav-link js-scroll-trigger" href="Help.aspx">Help</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="/Contacts.aspx">Contact</a>
