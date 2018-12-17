@@ -13655,7 +13655,8 @@ fieldset[disabled] .form-group .form-control {
 }
 
 .page-header:before {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgbpx;
+  he);
 }
 
 html * {
@@ -14465,24 +14466,25 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   left: 0;
   z-index: 2;
   width: 260px;
-  background: #fff;
-  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  background: tn-icon {
+  color: inherit;
+  background-color: #9c27b0;
 }
 
-.sidebar .caret {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 2px;
-  vertical-align: middle;
-  border-top: 4px dashed;
-  border-top: 4px solid\9;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
+.open>.fixed-plugin .btn.btn-primary.dropdown-toggle.bmd-btn-icon:hover {
+  background-color: #9124a3;
 }
 
-.sidebar[data-background-color="black"] {
-  background-color: #191919;
+.fixed-plugin .btn.btn-primary.disabled:focus,
+.fixed-plugin .btn.btn-primary.disabled.focus,
+.fixed-plugin .btn.btn-primary:disabled:focus,
+.fixed-plugin .btn.btn-primary:disabled.focus {
+  background-color: #9c27b0;
+  border-color: #9c27b0;
+}
+
+.fixed-plugin .btn.btn-primary.disabled:hover,
+.fixed-plu9;
 }
 
 .sidebar .sidebar-wrapper {
