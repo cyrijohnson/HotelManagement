@@ -190,17 +190,33 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="Content\Aboutpage.css" />
+    <Content Include="Contacts.aspx" />
+    <Content Include="Content\About\Aboutpage.css" />
+    <Content Include="Content\Contact\contact.css" />
     <Content Include="Content\loginpage.css" />
     <Content Include="Content\loginpagemain.css" />
+    <Content Include="Content\loginpage\animate.css" />
+    <Content Include="Content\loginpage\bootstrap.min.css" />
+    <Content Include="Content\loginpage\font-awesome.min.css" />
+    <Content Include="Content\loginpage\hamburgers.min.css" />
+    <Content Include="Content\loginpage\select2.min.css" />
     <Content Include="Content\loginsignup.css" />
+    <Content Include="Content\loginpage\main.css" />
+    <Content Include="Content\loginpage\util.css" />
     <Content Include="Global.asax" />
     <Content Include="Images\bg-masthead.jpg" />
     <Content Include="Images\bg.jpg" />
+    <Content Include="Images\img-01.png" />
     <Content Include="Images\login-button.png" />
     <Content Include="Images\user symbol.png" />
     <Content Include="Images\welcome image.jpeg" />
-    <Content Include="loginsignup.aspx" />
+    <Content Include="loginpage.aspx" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-3.2.1.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\select2.min.js" />
+    <Content Include="Scripts\tilt.jquery.min.js" />
     <Content Include="Web.config" />
     <Content Include="landingpage.aspx" />
   </ItemGroup>
@@ -213,15 +229,22 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Contacts.aspx.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contacts.aspx.designer.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="loginsignup.aspx.cs">
-      <DependentUpon>loginsignup.aspx</DependentUpon>
+    <Compile Include="loginpage.aspx.cs">
+      <DependentUpon>loginpage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="loginsignup.aspx.designer.cs">
-      <DependentUpon>loginsignup.aspx</DependentUpon>
+    <Compile Include="loginpage.aspx.designer.cs">
+      <DependentUpon>loginpage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="landingpage.aspx.cs">
@@ -233,6 +256,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fonts\Poppins-Bold.ttf" />
+    <Content Include="fonts\Poppins-Medium.ttf" />
+    <Content Include="fonts\Poppins-Regular.ttf" />
+    <Content Include="fonts\Montserrat-Bold.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
