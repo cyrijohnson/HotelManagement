@@ -205,16 +205,19 @@
     <Content Include="Content\loginsignup.css" />
     <Content Include="Content\loginpage\main.css" />
     <Content Include="Content\loginpage\util.css" />
+    <Content Include="Content\user profile\demo.css" />
     <Content Include="Dashboard.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Help.aspx" />
     <Content Include="Images\26-512.png" />
     <Content Include="Images\bg-masthead.jpg" />
     <Content Include="Images\bg.jpg" />
+    <Content Include="Images\i.png" />
     <Content Include="Images\img-01.png" />
     <Content Include="Images\login-button.png" />
     <Content Include="Images\sidebar-2.jpg" />
     <Content Include="Images\user symbol.png" />
+    <Content Include="Images\user.png" />
     <Content Include="Images\welcome image.jpeg" />
     <Content Include="loginpage.aspx" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -231,6 +234,7 @@
     <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\select2.min.js" />
     <Content Include="Scripts\tilt.jquery.min.js" />
+    <Content Include="UserProfile.aspx" />
     <Content Include="Web.config" />
     <Content Include="landingpage.aspx" />
   </ItemGroup>
@@ -281,6 +285,13 @@
     </Compile>
     <Compile Include="landingpage.aspx.designer.cs">
       <DependentUpon>landingpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
