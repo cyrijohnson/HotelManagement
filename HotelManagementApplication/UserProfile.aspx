@@ -11,23 +11,19 @@
     User Profile
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-  <!--     Fonts and icons     -->
+
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-  <!-- CSS Files -->
+
   <link href="Content/Dashboard/material-dashboard.css" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
+
   <link href="Content/user profile/demo.css" rel="stylesheet" />
 </head>
 
 <body class="dark-edition">
   <div class="wrapper ">
     <div class="sidebar" data-color="purple" data-background-color="black" data-image="Images/sidebar-2.jpg">
-      <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
-
-        Tip 2: you can also add an image using data-image tag
-    -->
+ 
       <div class="logo">
         <a href="landingpage.aspx" class="simple-text logo-normal">
           iSoft
@@ -83,17 +79,12 @@
               <p>Settings</p>
             </a>
           </li>
-          <!-- <li class="nav-item active-pro ">
-                <a class="nav-link" href="./upgrade.html">
-                    <i class="material-icons">unarchive</i>
-                    <p>Upgrade to PRO</p>
-                </a>
-            </li> -->
+      
         </ul>
       </div>
     </div>
     <div class="main-panel">
-      <!-- Navbar -->
+ 
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
         <div class="container-fluid">
           <div class="navbar-wrapper">
@@ -135,7 +126,7 @@
           </div>
         </div>
       </nav>
-      <!-- End Navbar -->
+
       <div class="content">
         <div class="container-fluid">
           <div class="row">
@@ -237,23 +228,23 @@
       </script>
     </div>
   </div>
-  <!--   Core JS Files   -->
+
   <script src="Scripts/jquery-3.2.1.min.js"></script>
   <script src="Scripts/popper.js"></script>
   <script src="Scripts/dashboard/bootstrap-material-design.min.js"></script>
   <script src="https://unpkg.com/default-passive-events"></script>
   <script src="Scripts/dashboard/perfect-scrollbar.jquery.min.js"></script>
-  <!-- Place this tag in your head or just before your close body tag. -->
+
   <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <!--  Google Maps Plugin    -->
+
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-  <!-- Chartist JS -->
+
   <script src="Scripts/dashboard/chartist.min.js"></script>
-  <!--  Notifications Plugin    -->
+
   <script src="Scripts/dashboard/bootstrap-notify.js"></script>
-  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  
   <script src="Scripts/dashboard/material-dashboard.js"></script>
-  <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+ 
   <script src="Scripts/dashboard/demo.js"></script>
   <script>
     $(document).ready(function() {
@@ -269,7 +260,7 @@
         window_width = $(window).width();
 
         $('.fixed-plugin a').click(function(event) {
-          // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
+          
           if ($(this).hasClass('switch-trigger')) {
             if (event.stopPropagation) {
               event.stopPropagation();
@@ -403,12 +394,11 @@
             }, 300);
           }
 
-          // we simulate the window Resize so the charts will get updated in realtime.
+        
           var simulateWindowResize = setInterval(function() {
             window.dispatchEvent(new Event('resize'));
           }, 180);
 
-          // we stop the simulation of Window Resize after the animations are completed
           setTimeout(function() {
             clearInterval(simulateWindowResize);
           }, 1000);

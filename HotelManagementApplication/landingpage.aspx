@@ -12,22 +12,20 @@
     <link rel="icon" type="image/png" href="Images/i.png">
     <title>iSoft - Intelligent Hotel Management System</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="Content/loginpage.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
   
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+  
     <link href="Content/loginpagemain.css" rel="stylesheet">
 
   </head>
 
   <body id="page-top">
 
-    <!-- Navigation -->
+    
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">iSoft-Make It Possible!</a>
@@ -54,7 +52,7 @@
       </div>
     </nav>
 
-    <!-- Header -->
+  
     <header class="masthead">
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
