@@ -202,7 +202,6 @@
     <Content Include="Content\loginpage\font-awesome.min.css" />
     <Content Include="Content\loginpage\hamburgers.min.css" />
     <Content Include="Content\loginpage\select2.min.css" />
-    <Content Include="Content\loginsignup.css" />
     <Content Include="Content\loginpage\main.css" />
     <Content Include="Content\loginpage\util.css" />
     <Content Include="Content\user profile\demo.css" />
