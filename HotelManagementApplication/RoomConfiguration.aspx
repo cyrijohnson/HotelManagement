@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Dashboard.aspx.cs" Inherits="HotelManagementApplication.Dashboard" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RoomConfiguration.aspx.cs" Inherits="HotelManagementApplication.RoomConfiguration" %>
 
 <!doctype html>
 <html lang="en">

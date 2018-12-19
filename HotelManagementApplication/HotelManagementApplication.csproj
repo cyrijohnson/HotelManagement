@@ -211,6 +211,7 @@
     <Content Include="Images\26-512.png" />
     <Content Include="Images\bg-masthead.jpg" />
     <Content Include="Images\bg.jpg" />
+    <Content Include="Images\dashboard.png" />
     <Content Include="Images\i.png" />
     <Content Include="Images\img-01.png" />
     <Content Include="Images\login-button.png" />
@@ -219,6 +220,8 @@
     <Content Include="Images\user.png" />
     <Content Include="Images\welcome image.jpeg" />
     <Content Include="loginpage.aspx" />
+    <Content Include="ManageBookings.aspx" />
+    <Content Include="RoomConfiguration.aspx" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\dashboard\bootstrap-material-design.min.js" />
     <Content Include="Scripts\dashboard\bootstrap-notify.js" />
@@ -277,6 +280,13 @@
     <Compile Include="loginpage.aspx.designer.cs">
       <DependentUpon>loginpage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ManageBookings.aspx.cs">
+      <DependentUpon>ManageBookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageBookings.aspx.designer.cs">
+      <DependentUpon>ManageBookings.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="landingpage.aspx.cs">
       <DependentUpon>landingpage.aspx</DependentUpon>
@@ -284,6 +294,13 @@
     </Compile>
     <Compile Include="landingpage.aspx.designer.cs">
       <DependentUpon>landingpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RoomConfiguration.aspx.cs">
+      <DependentUpon>RoomConfiguration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RoomConfiguration.aspx.designer.cs">
+      <DependentUpon>RoomConfiguration.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserProfile.aspx.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
