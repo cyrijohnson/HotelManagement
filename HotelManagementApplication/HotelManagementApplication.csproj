@@ -204,14 +204,17 @@
     <Content Include="Content\loginpage\select2.min.css" />
     <Content Include="Content\loginpage\main.css" />
     <Content Include="Content\loginpage\util.css" />
+    <Content Include="Content\Roomconfig\roomconfig.css" />
     <Content Include="Content\user profile\demo.css" />
     <Content Include="Dashboard.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Help.aspx" />
     <Content Include="Images\26-512.png" />
+    <Content Include="Images\add.png" />
     <Content Include="Images\bg-masthead.jpg" />
     <Content Include="Images\bg.jpg" />
     <Content Include="Images\dashboard.png" />
+    <Content Include="Images\doors.jpg" />
     <Content Include="Images\i.png" />
     <Content Include="Images\img-01.png" />
     <Content Include="Images\login-button.png" />

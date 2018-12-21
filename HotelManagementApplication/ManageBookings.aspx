@@ -40,7 +40,7 @@
             </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="./dashboard.html">
+            <a class="nav-link" href="ManageBookings.aspx">
               <i class="material-icons">book</i>
               <p>Manage Bookings</p>
             </a>
