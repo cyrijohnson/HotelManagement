@@ -1,2 +1,58 @@
 ﻿body {
+    margin-bottom:50px;
+}
+#box {
+    width: auto;
+    height: auto;
+    background-color: black;
+    margin-top: 450px;
+    margin-bottom: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    opacity: 0.5;
+    border-radius: 25px;
+}
+h1 {
+    letter-spacing: -1px;
+    color:white;
+    opacity:2;
+    font-size:large;
+}
+textarea {
+    width: 100%;
+    border-radius: 10px;
+}
+.btn {
+    -webkit-box-shadow: 0 .1875rem .1875rem 0 rgba(0,0,0,.1) !important;
+    box-shadow: 0 .1875rem .1875rem 0 rgba(0,0,0,.1) !important;
+    padding: 1.25rem 2rem;
+    font-family: 'Varela Round';
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    border: 2px;
+    border-color:white;
+    border-radius:2px;
+}
+
+.btn-primary {
+    background-color: #000000
+}
+
+    .btn-primary:hover {
+        background-color: #64a19d
+    }
+
+    .btn-primary:focus {
+        background-color: #64a19d;
+        color: #fff
+    }
+input {
+    border-radius: 10px;
+    text-align:center;
+
 }

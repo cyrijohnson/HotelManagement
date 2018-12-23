@@ -10,13 +10,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>iSoft - About</title>
+    <title>iSoft - Content</title>
 
-    
+    <link rel="icon" type="image/png" href="Images/i.png">
     <link href="Content/loginpage.css" rel="stylesheet">
-
-    
-  
+    <link href="Content/Contact/contact.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
@@ -52,9 +50,34 @@
 
 
     <header class="masthead">
-      <div class="container d-flex h-100 align-items-center">
-       
-      </div>
+      <div class="container d-flex h-50 align-items-center">
+          <h1>Contact Us!</h1>
+          <div id="box">
+              <h2 class="text-white">Queries Here Please </h2>
+          <div class="text-white-50 mx-auto mt-2 mb-2">Name:</div>
+          <div class="wrap-input200 validate-input" data-validate = "*Name required">
+						<input class="input200"  type="text" name="name" placeholder="Name">
+						<span class="symbol-input200"></span>
+					</div>
+          <div class="text-white-50 mx-auto mt-2 mb-2">Email:</div>
+          <div class="wrap-input200 validate-input" data-validate = "*Valid email required">
+						<input class="input200"  type="text" name="email" placeholder="Email">
+						<span class="symbol-input200"></span>
+					</div>   
+              
+          <div class="text-white-50 mx-auto mt-2 mb-2">Comment:</div>
+              
+          <div class="wrap-input100 validate-input">
+						<textarea class="input200" name="comment" rows="5" cols="30" placeholder="Write for us!"></textarea>
+						<span class="symbol-input200"></span>
+					</div>  
+                 <div class="mt-3.5 mb-5"></div>
+          <div class="container d-flex-btn">
+              <a href="landingpage.aspx" class="btn btn-primary js-scroll-trigger">Submit</a>
+              </div>
+               </div>
+          </div>
+      
     </header>
   </body>
 </html>
