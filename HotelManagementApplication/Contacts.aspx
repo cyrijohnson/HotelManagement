@@ -53,7 +53,7 @@
       <div class="container d-flex h-50 align-items-center">
           <h1>Contact Us!</h1>
           <div id="box">
-              <h2 class="text-white">Queries Here Please </h2>
+              <h2 class="text-white">Queries Here Please! </h2>
           <div class="text-white-50 mx-auto mt-2 mb-2">Name:</div>
           <div class="wrap-input200 validate-input" data-validate = "*Name required">
 						<input class="input200"  type="text" name="name" placeholder="Name">
@@ -67,17 +67,14 @@
               
           <div class="text-white-50 mx-auto mt-2 mb-2">Comment:</div>
               
-          <div class="wrap-input100 validate-input">
+          <div class="wrap-input200 validate-input">
 						<textarea class="input200" name="comment" rows="5" cols="30" placeholder="Write for us!"></textarea>
 						<span class="symbol-input200"></span>
 					</div>  
                  <div class="mt-3.5 mb-5"></div>
-          <div class="container d-flex-btn">
-              <a href="landingpage.aspx" class="btn btn-primary js-scroll-trigger">Submit</a>
-              </div>
-               </div>
-          </div>
-      
+				<a href="landingpage.aspx" class="text-white button">Submit</a>		
+        	</div>
+       </div>
     </header>
   </body>
 </html>

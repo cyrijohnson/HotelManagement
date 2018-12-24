@@ -26,33 +26,38 @@ textarea {
     width: 100%;
     border-radius: 10px;
 }
-.btn {
-    -webkit-box-shadow: 0 .1875rem .1875rem 0 rgba(0,0,0,.1) !important;
-    box-shadow: 0 .1875rem .1875rem 0 rgba(0,0,0,.1) !important;
-    padding: 1.25rem 2rem;
-    font-family: 'Varela Round';
-    font-size: 80%;
-    text-transform: uppercase;
-    letter-spacing: .15rem;
-    border: 2px;
-    border-color:white;
-    border-radius:2px;
-}
 
-.btn-primary {
-    background-color: #000000
-}
-
-    .btn-primary:hover {
-        background-color: #64a19d
-    }
-
-    .btn-primary:focus {
-        background-color: #64a19d;
-        color: #fff
-    }
 input {
     border-radius: 10px;
     text-align:center;
 
 }
+.button {
+    cursor: pointer;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    background-color: #000000;
+    border: 1px solid white;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+    font-family: 'Varela Round';
+    font-size: 80%;
+    text-transform: uppercase;
+}
+
+    .button:hover {
+        background-color: #64a19d;
+        color:#ffffff;
+        opacity:1;
+    }
+
+    .button:focus {
+        background-color: #64a19d;
+        color: #ffffff;
+        opacity:1;
+    }
+
