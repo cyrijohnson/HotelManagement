@@ -8,7 +8,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>iSoft - About</title>
+    <link rel="icon" type="image/png" href="Images/i.png">
+    <title>iSoft - Help</title>
 
    
     <link href="Content/loginpage.css" rel="stylesheet">

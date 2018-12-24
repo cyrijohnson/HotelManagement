@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>iSoft - Content</title>
+    <title>iSoft - Contact</title>
 
     <link rel="icon" type="image/png" href="Images/i.png">
     <link href="Content/loginpage.css" rel="stylesheet">
@@ -71,7 +71,7 @@
 						<textarea class="input200" name="comment" rows="5" cols="30" placeholder="Write for us!"></textarea>
 						<span class="symbol-input200"></span>
 					</div>  
-                 <div class="mt-3.5 mb-5"></div>
+                 <div class="mt-3 mb-5"></div>
 				<a href="landingpage.aspx" class="text-white button">Submit</a>		
         	</div>
        </div>
