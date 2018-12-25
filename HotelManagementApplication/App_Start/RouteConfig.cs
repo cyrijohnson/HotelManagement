@@ -16,7 +16,7 @@ namespace HotelManagementApplication
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}14  /{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults:"landingpage.aspx"
             );
         }
     }
