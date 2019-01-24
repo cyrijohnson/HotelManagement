@@ -97,21 +97,21 @@
 }
 
 .masthead {
-    position:fixed;
+    position:relative;
     width: 100%;
     height: auto;
     min-height: 35rem;
     padding: 15rem 0;
     background: linear-gradient(to bottom,rgba(22,22,22,.1) 0,rgba(22,22,22,.5) 75%,#161616 100%),url(../Images/bg-masthead.jpg);
     background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover
+   
+    background-attachment:fixed;
+    background-size: 100%;
 }
 
     .masthead h1 {
         font-family: 'Varela Round';
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         line-height: 2.5rem;
         letter-spacing: .8rem;
         background: -webkit-linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,0));
@@ -204,6 +204,4 @@ a {
     color: #64a19d !important
 }
 
-footer {
-    padding: 5rem 0
-}
+

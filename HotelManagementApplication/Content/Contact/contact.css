@@ -1,20 +1,21 @@
 ﻿body {
-    margin-bottom:50px;
+    
 }
 #box {
     width: auto;
     height: auto;
     background-color: black;
-    margin-top: 450px;
+   
     margin-bottom: 100px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 800px;
+
     padding-top: 50px;
     padding-right: 50px;
     padding-left: 50px;
     padding-bottom: 50px;
     opacity: 0.5;
     border-radius: 25px;
+    float:right
 }
 h1 {
     letter-spacing: -1px;
@@ -61,3 +62,25 @@ input {
         opacity:1;
     }
 
+    /*       ============================================================           */
+#contactus {
+    margin-top:1.5em;
+    font-family: 'Varela Round';
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: .8rem;
+    background: -webkit-linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text
+}
+
+#contactus {
+    font-size: 2rem;
+    line-height: 4rem
+}
+
+#contactus{
+    font-size: 2rem;
+    line-height: 6.5rem;
+    letter-spacing: .5rem
+}

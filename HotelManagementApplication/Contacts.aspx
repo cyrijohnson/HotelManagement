@@ -23,7 +23,7 @@
 
   </head>
 
-  <body id="page-top">
+  <body id="page-top" class="masthead">
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
@@ -49,9 +49,13 @@
     </nav>
 
 
-    <header class="masthead">
+    <header>
       <div class="container d-flex h-50 align-items-center">
-          <h1>Contact Us!</h1>
+          <div id="contactus">Contact Us!</div>
+         
+       </div>
+        <div class="container d-flex h-50 align-items-center">
+          
           <div id="box">
               <h2 class="text-white">Queries Here Please! </h2>
           <div class="text-white-50 mx-auto mt-2 mb-2">Name:</div>

@@ -205,6 +205,7 @@
     <Content Include="Content\loginpage\main.css" />
     <Content Include="Content\loginpage\util.css" />
     <Content Include="Content\Roomconfig\roomconfig.css" />
+    <Content Include="Content\signup\main.css" />
     <Content Include="Content\user profile\demo.css" />
     <Content Include="Dashboard.aspx" />
     <Content Include="Global.asax" />
@@ -239,6 +240,7 @@
     <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\select2.min.js" />
     <Content Include="Scripts\tilt.jquery.min.js" />
+    <Content Include="SignUpPage.aspx" />
     <Content Include="UserProfile.aspx" />
     <Content Include="Web.config" />
     <Content Include="landingpage.aspx" />
@@ -304,6 +306,13 @@
     </Compile>
     <Compile Include="RoomConfiguration.aspx.designer.cs">
       <DependentUpon>RoomConfiguration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpPage.aspx.cs">
+      <DependentUpon>SignUpPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUpPage.aspx.designer.cs">
+      <DependentUpon>SignUpPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserProfile.aspx.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
