@@ -21,9 +21,9 @@
     <div class="sidebar" data-color="purple" data-background-color="black" data-image="Images/sidebar-2.jpg">
     
       <div class="logo">
-        <a href="landingpage.aspx" class="simple-text logo-normal">
-          iSoft
-        </a>
+        <asp:label ID="label1" text="ISoft" runat="server" onclick="isoft_click" Cssclass="simple-text logo-normal">
+          
+        </asp:label>
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">

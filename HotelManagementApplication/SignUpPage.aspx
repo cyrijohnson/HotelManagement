@@ -10,8 +10,9 @@
 <body>
     <div class="limiter">
         <div class="container-login100">
-            <div class="wrap-login100">
-                <form id="form1" runat="server">
+            <div class="login-wrap fade-in two wrap-login100">
+            
+    <form id="form1" runat="server">
     <div id="box">
         <div id="signup">
             <h2>Sign Up</h2>
@@ -64,7 +65,8 @@
     </div>
 
     </form>
-            </div>
+
+</div>
         </div>
     </div>
 </body>

@@ -73,13 +73,13 @@ namespace HotelManagementApplication
 
                 {
                     SqlCommand cmd = new SqlCommand();
-                    SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Cyril Johnson\source\repos\MainApp\MainApp\App_Data\logindata.mdf;Integrated Security=True");
+                    SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Cyril Johnson\Source\Repos\HotelManagement\HotelManagementApplication\App_Data\SignUpDB.mdf;Integrated Security=True");
                     con.Open();
                     cmd.Connection = con;
                     cmd.CommandText = "INSERT INTO LOGINDAT(email,username,password,phone,dob) VALUES('" + TextBox3.Text + "','" + name + "','" + TextBox6.Text + "','" + TextBox4.Text + "','" + dob + "');";
                     cmd.ExecuteNonQuery();
                     con.Close();
-                    Response.Redirect("Preconfig.aspx?uname='" + TextBox3.Text + "'");
+                    Response.Redirect("Dashboard.aspx?uname='" + TextBox3.Text + "'");
                 }
 
 

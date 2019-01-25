@@ -32,14 +32,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 177px 130px 33px 95px;
-    padding-top:
+    padding-top:5em;
+    padding-bottom:5em;
+    padding-left:6em;
 }
 
 
 /*     =========================================================================       */
 
 
+
+html {
+    background-color: black;
+    fill-opacity: 0.5;
+    background-image: url(../Images/bg-masthead.jpg);
+    background-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .label {
     padding-left: 3em;
