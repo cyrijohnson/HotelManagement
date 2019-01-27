@@ -16,6 +16,7 @@ namespace HotelManagementApplication
         }
         public void signupclick(object sender, EventArgs e)
         {
+            string cstatus = "false";
             bool flag1, flag2, flag3, flag4;
             DateTime dob = Convert.ToDateTime("01-01-1999");
             string name = TextBox1.Text + " " + TextBox2.Text;
@@ -76,10 +77,10 @@ namespace HotelManagementApplication
                     SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Cyril Johnson\Source\Repos\HotelManagement\HotelManagementApplication\App_Data\SignUpDB.mdf;Integrated Security=True");
                     con.Open();
                     cmd.Connection = con;
-                    cmd.CommandText = "INSERT INTO LOGINDAT(email,username,password,phone,dob) VALUES('" + TextBox3.Text + "','" + name + "','" + TextBox6.Text + "','" + TextBox4.Text + "','" + dob + "');";
+                    cmd.CommandText = "INSERT INTO LOGINDAT(email,username,password,phone,dob,cstatus) VALUES('" + TextBox3.Text + "','" + name + "','" + TextBox6.Text + "','" + TextBox4.Text + "','" + dob + "','"+cstatus+"');";
                     cmd.ExecuteNonQuery();
                     con.Close();
-                    Response.Redirect("Dashboard.aspx?uname='" + TextBox3.Text + "'");
+                    Response.Redirect("loginpage.aspx");
                 }
 
 

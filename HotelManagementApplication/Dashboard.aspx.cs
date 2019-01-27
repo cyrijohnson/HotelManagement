@@ -11,22 +11,39 @@ namespace HotelManagementApplication
 {
     public partial class Dashboard : System.Web.UI.Page
     {
-        string uname;
+
+        string uname, temp;
         protected void Page_Load(object sender, EventArgs e)
         {
-            uname = Request.QueryString["uname"];
-            SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename =C:\Users\Cyril Johnson\Source\Repos\HotelManagement\HotelManagementApplication\App_Data\SignUpDB.mdf; Integrated Security = True");
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = con;
-            SqlDataAdapter da= new SqlDataAdapter("select username from LOGINDAT where email='"+uname+"';", con); 
-            DataTable dt = new DataTable();
-            
-            da.Fill(dt);
-            label1.Text = Convert.ToString(dt.Rows[0]);
+           
+            string param = Request.QueryString["uname"];
+            // uname = param.Substring(0, (param.Length));
+            uname = "cyril39999@gmail.com";
+            try
+            {
+                alttext.Visible = false;
+                tiletable.Visible = true;
+                SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename =C:\Users\Cyril Johnson\Source\Repos\HotelManagement\HotelManagementApplication\App_Data\SignUpDB.mdf; Integrated Security = True");
+                SqlCommand cmd = new SqlCommand("select username,cstatus from LOGINDAT where email='" + uname + "';", con);
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                label1.Text = Convert.ToString(dt.Rows[0][0]);
+                temp = Convert.ToString(dt.Rows[0][1]);
+                if(temp=="false")
+                {
+                    tiletable.Visible = false;
+                    alttext.Visible = true;
+                }
+            }
+            catch
+            {
+                label1.Text = "Username";
+            }
         }
-        public void isoft_click(object sender, EventArgs e)
+        public void configure_click(object sender, EventArgs e)
         {
-            Response.Redirect("");
+            Response.Redirect("RoomConfiguration.aspx?uname=" + Server.UrlEncode(uname));
         }
     }
 }

@@ -88,6 +88,52 @@ p {
   margin-bottom: 1rem;
 }
 
+#tiletable {
+    margin-bottom: 60px;
+
+}
+.tiletext{
+    opacity:1.0;
+    color:white;
+}
+.tilefirst {
+    height: 137px;
+    width: 283px;
+    background-color: #a39cb9;
+    border-radius: 7px;
+    text-align: center;
+    margin-left: 306px;
+    margin-top: 75px;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor:pointer;
+
+}
+.tile {
+    height: 137px;
+    width: 283px;
+    background-color: #a39cb9;
+    border-radius: 7px;
+    text-align: center;
+    margin-left: 63px;
+    margin-top: 75px;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor:pointer;
+
+}
+#alttext {
+    margin-left: 601px;
+    color: white;
+    margin-top: 58px;
+    font-size: large;
+    cursor:pointer;
+}
+
+#addbutton{
+color:white;
+margin-top:20px;
+
+}
+
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;

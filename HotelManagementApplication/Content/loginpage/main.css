@@ -25,6 +25,13 @@
     src: url('../fonts/Montserrat-Bold.ttf');
 }
 
+
+#label1{
+    color:red;
+    font-size:medium;
+    text-align:center;
+    align-self:center;
+}
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
@@ -81,7 +88,7 @@ ul, li {
 
 
 /*---------------------------------------------*/
-input {
+.inputalt {
 	outline: none;
 	border: none;
 }
@@ -91,24 +98,24 @@ textarea {
   border: none;
 }
 
-textarea:focus, input:focus {
+textarea:focus, .inputalt:focus {
   border-color: transparent !important;
 }
 
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
-input:focus::-moz-placeholder { color:transparent; }
-input:focus:-ms-input-placeholder { color:transparent; }
+.inputalt:focus::-webkit-input-placeholder { color:transparent; }
+.inputalt:focus:-moz-placeholder { color:transparent; }
+.inputalt:focus::-moz-placeholder { color:transparent; }
+.inputalt:focus:-ms-input-placeholder { color:transparent; }
 
 textarea:focus::-webkit-input-placeholder { color:transparent; }
 textarea:focus:-moz-placeholder { color:transparent; }
 textarea:focus::-moz-placeholder { color:transparent; }
 textarea:focus:-ms-input-placeholder { color:transparent; }
 
-input::-webkit-input-placeholder { color: #999999; }
-input:-moz-placeholder { color: #999999; }
-input::-moz-placeholder { color: #999999; }
-input:-ms-input-placeholder { color: #999999; }
+.inputalt::-webkit-input-placeholder { color: #999999; }
+.inputalt:-moz-placeholder { color: #999999; }
+.inputalt::-moz-placeholder { color: #999999; }
+.inputalt:-ms-input-placeholder { color: #999999; }
 
 textarea::-webkit-input-placeholder { color: #999999; }
 textarea:-moz-placeholder { color: #999999; }
@@ -184,7 +191,7 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 177px 130px 33px 95px;
+  padding: 45px 130px 33px 95px;
 }
 
 /*------------------------------------------------------------------

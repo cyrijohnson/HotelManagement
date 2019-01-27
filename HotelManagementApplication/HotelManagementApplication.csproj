@@ -223,6 +223,7 @@
     <Content Include="Images\i.png" />
     <Content Include="Images\img-01.png" />
     <Content Include="Images\login-button.png" />
+    <Content Include="Images\tileback.jpg" />
     <Content Include="Images\sidebar-2.jpg" />
     <Content Include="Images\user symbol.png" />
     <Content Include="Images\user.png" />

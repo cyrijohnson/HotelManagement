@@ -25,20 +25,23 @@
 </head>
 <body>
 	
+	<form id="form1" runat="server">
+	
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<div class="login100-pic js-tilt" data-tilt>
 					<img src="Images/img-01.png" alt="IMG">
+                    <asp:Label ID="Label1" runat="server" Text="" ForeColor="Red"></asp:Label>
+				   
 				</div>
 
-				<form class="login100-form validate-form">
 					<span class="login100-form-title">
 						Member Login
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100"  type="text" name="email" placeholder="Email">
+						<asp:TextBox class="input100 inputalt" ID="Textbox1" runat="server"  type="text" name="email" placeholder="Email"/>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							
@@ -46,7 +49,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+						<asp:TextBox class="input100 inputalt"  ID="Textbox2" runat="server" type="password" name="pass" placeholder="Password"/>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							
@@ -54,9 +57,7 @@
 					</div>
 					
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Login
-						</button>
+						<asp:button Text="Login" runat="server" onclick="loginclick" class="login100-form-btn"/>
 					</div>
 
 					<div class="text-center p-t-12">
@@ -74,7 +75,6 @@
 							
 						</a>
 					</div>
-				</form>
 			</div>
 		</div>
 	</div>
@@ -98,6 +98,8 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="Scripts/main.js"></script>
+
+    </form>
 
 </body>
 </html>
