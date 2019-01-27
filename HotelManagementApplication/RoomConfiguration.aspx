@@ -80,6 +80,7 @@
                     </ul>
                 </div>
             </div>
+            <asp:Label runat="server" Text="Assets" ID="assetshead"></asp:Label>
            <asp:ImageButton ID="ImageButton1" runat="server" Height="100px" ImageUrl="~/Images/add.png" OnClick="ImageButton1_Click" ToolTip="Add Hotel" Width="100px"/>
             
         </div>

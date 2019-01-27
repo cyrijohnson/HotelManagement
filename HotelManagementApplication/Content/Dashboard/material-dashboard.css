@@ -139,12 +139,20 @@ p {
     cursor: pointer
 }
 
+#assetshead {
+    text-align: center;
+    margin-left: 72px;
+    font-size: -webkit-xxx-large;
+    color: white;
+    font-family:sans-serif;
+}
+
 abbr[title],
 abbr[data-original-title] {
-  text-decoration: underline;
-  text-decoration: underline dotted;
-  cursor: help;
-  border-bottom: 0;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+    cursor: help;
+    border-bottom: 0;
 }
 
 address {

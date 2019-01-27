@@ -36,7 +36,8 @@ namespace HotelManagementApplication
 
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Write("<script language=javascript>alert('ERROR');</script>");
+            Response.Redirect("Addassetwiz.aspx?uname="+ Server.UrlEncode(uname));
+           // Response.Write("<script language=javascript>alert('ERROR');</script>");
         }
     }
 }

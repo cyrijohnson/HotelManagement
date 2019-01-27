@@ -190,6 +190,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Addassetwiz.aspx" />
     <Content Include="App_Data\SignUpDB.mdf" />
     <Content Include="App_Data\SignUpDB_log.ldf">
       <DependentUpon>SignUpDB.mdf</DependentUpon>
@@ -257,6 +258,13 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Addassetwiz.aspx.cs">
+      <DependentUpon>Addassetwiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Addassetwiz.aspx.designer.cs">
+      <DependentUpon>Addassetwiz.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Contacts.aspx.cs">
