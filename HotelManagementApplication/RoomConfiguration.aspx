@@ -19,7 +19,7 @@
 <body class="dark-edition">
     <form id="form1" runat="server">
         <div class="wrapper ">
-            <asp:Button ID="alttext" runat="server" Text="Click here to configure your hotel." BorderStyle="None" BackColor="Transparent" />
+            <asp:Button ID="alttext" runat="server" Text="" BorderStyle="None" BackColor="Transparent" />
             <div class="sidebar" data-color="purple" data-background-color="black" data-image="Images/sidebar-2.jpg">
                 <div class="logo">
                     <asp:Label ID="label1" Text="ISoft" runat="server" onserverclick="isoft_click" CssClass="simple-text logo-normal" />
@@ -80,10 +80,8 @@
                     </ul>
                 </div>
             </div>
-           
-            <div id="addbutton">
-                 Add Hotel
-            </div>
+           <asp:ImageButton ID="ImageButton1" runat="server" Height="100px" ImageUrl="~/Images/add.png" OnClick="ImageButton1_Click" ToolTip="Add Hotel" Width="100px"/>
+            
         </div>
 
         <script src="Scripts/dashboard/jquery.min.js"></script>
@@ -265,6 +263,7 @@
                 });
             });
         </script>
+        
     </form>
 </body>
 

@@ -25,12 +25,18 @@ namespace HotelManagementApplication
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
-                alttext.Text = "Lets answer a few quick questions to get you set up.";
+                
             }
             catch
             {
                 alttext.Text = "Error occured!!! Please try again later";
             }
+        }
+       
+
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Write("<script language=javascript>alert('ERROR');</script>");
         }
     }
 }

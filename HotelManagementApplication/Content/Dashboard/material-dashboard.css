@@ -125,13 +125,18 @@ p {
     color: white;
     margin-top: 58px;
     font-size: large;
-    cursor:pointer;
+    cursor: pointer;
+   
+   
 }
 
-#addbutton{
-color:white;
-margin-top:20px;
-
+#ImageButton1 {
+    color: black;
+    margin-top: 30px;
+    margin-right: 853px;
+    margin-left: 341px;
+    border-radius: 1em;
+    cursor: pointer
 }
 
 abbr[title],
