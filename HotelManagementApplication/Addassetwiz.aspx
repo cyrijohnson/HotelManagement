@@ -22,12 +22,12 @@
                 <table id="tabb" runat="server">
                     <tr>
                         <td>
-                            
-                            <asp:Button Text="Tab 1" BorderStyle="None" ID="Tab1" CssClass="Initial" runat="server"
+
+                            <asp:Button Text="Complete Address" BorderStyle="None" ID="Tab1" CssClass="Initial" runat="server"
                                 OnClick="Tab1_Click" />
-                            <asp:Button Text="Tab 2" BorderStyle="None" ID="Tab2" CssClass="Initial" runat="server"
+                            <asp:Button Text="Agency and Rooms" BorderStyle="None" ID="Tab2" CssClass="Initial" runat="server"
                                 OnClick="Tab2_Click" />
-                            <asp:Button Text="Tab 3" BorderStyle="None" ID="Tab3" CssClass="Initial" runat="server"
+                            <asp:Button Text="Room Configuration" BorderStyle="None" ID="Tab3" CssClass="Initial" runat="server"
                                 OnClick="Tab3_Click" />
                             <asp:MultiView ID="MainView" runat="server">
                                 <asp:View ID="View1" runat="server">
@@ -45,81 +45,83 @@
                                                                             <p class="card-category">Complete your profile</p>
                                                                         </div>
                                                                         <div class="card-body">
-                                                                            
-                                                                                <div class="row">
-                                                                                    <div class="col-md-10">
-                                                                                        <div class="form-group">
-                                                                                            <label class="bmd-label-floating">Hotel Name</label>
-                                                                                            <asp:TextBox ID="tb1" runat="server" type="text" class="form-control" />
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    </div>
+
                                                                             <div class="row">
-                                                                                    <div class="col-md-10">
-                                                                                        <div class="form-group">
-                                                                                            <label class="bmd-label-floating">Care of</label>
-                                                                                            <asp:TextBox ID="tb2" runat="server" type="text" class="form-control"/>
-                                                                                        </div>
+                                                                                <div class="col-md-10">
+                                                                                    <div class="form-group">
+                                                                                        <label class="bmd-label-floating">Hotel Name</label>
+                                                                                        <asp:TextBox ID="tb1" runat="server" type="text" class="form-control" />
                                                                                     </div>
                                                                                 </div>
+                                                                            </div>
                                                                             <div class="row">
-                                                                                    <div class="col-md-10">
-                                                                                        <div class="form-group">
-                                                                                            <label class="bmd-label-floating">Building Name/Number</label>
-                                                                                            <asp:TextBox ID="tb3" runat="server" type="email" class="form-control"/>
-                                                                                        </div>
+                                                                                <div class="col-md-10">
+                                                                                    <div class="form-group">
+                                                                                        <label class="bmd-label-floating">Care of</label>
+                                                                                        <asp:TextBox ID="tb2" runat="server" type="text" class="form-control" />
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="row">
-                                                                                    <div class="col-md-10">
-                                                                                        <div class="form-group">
-                                                                                            <label class="bmd-label-floating">Street Name</label>
-                                                                                            <asp:TextBox ID="tb4" runat="server" type="text" class="form-control"/>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    </div>
+                                                                            </div>
                                                                             <div class="row">
-                                                                                    <div class="col-md-10">
-                                                                                        <div class="form-group">
-                                                                                            <label class="bmd-label-floating">Locality</label>
-                                                                                            <asp:TextBox ID="tb5" runat="server" type="text" class="form-control"/>
-                                                                                        </div>
+                                                                                <div class="col-md-10">
+                                                                                    <div class="form-group">
+                                                                                        <label class="bmd-label-floating">Building Name/Number</label>
+                                                                                        <asp:TextBox ID="tb3" runat="server" type="email" class="form-control" />
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="row">
-                                                                                    <div class="col-md-10">
-                                                                                        <div class="form-group">
-                                                                                            <label class="bmd-label-floating">City</label>
-                                                                                            <asp:TextBox ID="tb6" runat="server" type="text" class="form-control"/>
-                                                                                        </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-10">
+                                                                                    <div class="form-group">
+                                                                                        <label class="bmd-label-floating">Street Name</label>
+                                                                                        <asp:TextBox ID="tb4" runat="server" type="text" class="form-control" />
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="row">
-                                                                                    <div class="col-md-10">
-                                                                                        <div class="form-group">
-                                                                                            <label class="bmd-label-floating">District</label>
-                                                                                            <asp:TextBox ID="tb7" runat="server"  type="text" class="form-control"/>
-                                                                                        </div>
-                                                                                    </div></div>
+                                                                            </div>
                                                                             <div class="row">
-                                                                                    <div class="col-md-10">
-                                                                                        <div class="form-group">
-                                                                                            <label class="bmd-label-floating">State</label>
-                                                                                            <asp:TextBox ID="tb8" runat="server" type="text" class="form-control"/>
-                                                                                        </div>
-                                                                                    </div></div>
-                                                                            <div class="row">
-                                                                                    <div class="col-md-10">
-                                                                                        <div class="form-group">
-                                                                                            <label class="bmd-label-floating">Postal Code</label>
-                                                                                            <asp:TextBox ID="tb9" runat="server" type="text" class="form-control"/>
-                                                                                        </div>
+                                                                                <div class="col-md-10">
+                                                                                    <div class="form-group">
+                                                                                        <label class="bmd-label-floating">Locality</label>
+                                                                                        <asp:TextBox ID="tb5" runat="server" type="text" class="form-control" />
                                                                                     </div>
                                                                                 </div>
-                                                                                
-                                                                                <button type="submit" class="btn btn-primary pull-right" runat="server">Update Address</button>
-                                                                                <div class="clearfix"></div>
-                                                                         </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-10">
+                                                                                    <div class="form-group">
+                                                                                        <label class="bmd-label-floating">City</label>
+                                                                                        <asp:TextBox ID="tb6" runat="server" type="text" class="form-control" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-10">
+                                                                                    <div class="form-group">
+                                                                                        <label class="bmd-label-floating">District</label>
+                                                                                        <asp:TextBox ID="tb7" runat="server" type="text" class="form-control" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-10">
+                                                                                    <div class="form-group">
+                                                                                        <label class="bmd-label-floating">State</label>
+                                                                                        <asp:TextBox ID="tb8" runat="server" type="text" class="form-control" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-10">
+                                                                                    <div class="form-group">
+                                                                                        <label class="bmd-label-floating">Postal Code</label>
+                                                                                        <asp:TextBox ID="tb9" runat="server" type="text" class="form-control" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <button type="submit" runat="server" onserverclick="address_click" class="btn btn-primary pull-right" runat="server">Update Address</button>
+                                                                            <div class="clearfix"></div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -140,8 +142,73 @@
                                     <table style="width: 100%; border-width: 1px; border-color: #666; border-style: solid">
                                         <tr>
                                             <td>
-                                                <h3>View 2
-                                                </h3>
+                                                <div class="main-panelA">
+                                                    <div class="content">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-8">
+                                                                    <div class="card">
+                                                                        <div class="card-header card-header-primary">
+                                                                            <h4 class="card-title">Basic Information</h4>
+                                                                            <p class="card-category">Please complete the following</p>
+                                                                        </div>
+                                                                        <div class="card-body">
+
+                                                                            <div class="row">
+                                                                                <div class="col-md-10">
+                                                                                    <div class="form-group">
+                                                                                        <label class="bmd-label-floating">Total number of rooms</label>
+                                                                                        <asp:TextBox ID="TextBox1" runat="server" type="text" class="form-control" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-10">
+                                                                                    <div class="form-group">
+                                                                                        <label class="bmd-label-floating">Advertised in </label>
+                                                                                        <asp:CheckBox ID="checkbox1" runat="server" Text="    bookings.com" class="form-control"/>  
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-10">
+                                                                                    <div class="form-group">
+                                                                                        <label class="bmd-label-floating">Advertised in </label>
+                                                                                        <asp:CheckBox ID="checkbox2" runat="server" Text="    agoda.com" class="form-control"/> 
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-10">
+                                                                                    <div class="form-group">
+                                                                                         <label class="bmd-label-floating">Advertised in </label>
+                                                                                        <asp:CheckBox ID="checkbox3" runat="server" Text="    trivago.com" class="form-control"/> 
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-10">
+                                                                                    <div class="form-group">
+                                                                                        <label class="bmd-label-floating">Advertised in </label>
+                                                                                        <asp:CheckBox ID="checkbox4" runat="server" Text="    oyorooms.com" class="form-control"/> 
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <button type="submit" runat="server" onserverclick="adddata_click" class="btn btn-primary pull-right">Update Information</button>
+                                                                            <div class="clearfix"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <script>
+                                                        const x = new Date().getFullYear();
+                                                        let date = document.getElementById('date');
+                                                        date.innerHTML = '&copy; ' + x + date.innerHTML;
+                                                    </script>
+                                                </div>
                                             </td>
                                         </tr>
                                     </table>
@@ -163,7 +230,7 @@
 
             </div>
         </div>
- </form>
+    </form>
 </body>
 
 </html>
