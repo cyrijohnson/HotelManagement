@@ -49,7 +49,7 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-10">
                                                                                         <div class="form-group">
-                                                                                            <label class="bmd-label-floating">Company Name</label>
+                                                                                            <label class="bmd-label-floating">Hotel Name</label>
                                                                                             <asp:TextBox ID="tb1" runat="server" type="text" class="form-control" />
                                                                                         </div>
                                                                                     </div>
@@ -167,4 +167,3 @@
 </body>
 
 </html>
-r
