@@ -197,6 +197,7 @@
     </Content>
     <Content Include="Contacts.aspx" />
     <Content Include="Content\About\Aboutpage.css" />
+    <Content Include="Content\AddAssetWiz\Main.css" />
     <Content Include="Content\Contact\contact.css" />
     <Content Include="Content\Dashboard\material-dashboard.css" />
     <Content Include="Content\Help\Help.css" />

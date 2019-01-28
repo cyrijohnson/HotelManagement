@@ -1,0 +1,60 @@
+﻿
+.Initial {
+    display: block;
+    /* padding: 4px 18px 4px 18px; */
+    float: left;
+    /* border-style: solid; */
+    color: #f3e9e9;
+    /* background-color: #F44336; */
+    font-weight: bold;
+    /* border-radius: 1em; */
+    padding: 5px 38px 3px 49px;
+    background-color: transparent;
+
+}
+
+.Initial:hover {
+    background-color: aqua;
+    color: White;
+    
+}
+
+.sidebar,
+.main-panelA,
+.sidebar-wrapper {
+    -webkit-transition-property: top, bottom, width;
+    transition-property: top, bottom, width;
+    -webkit-transition-duration: .2s, .2s, .35s;
+    transition-duration: .2s, .2s, .35s;
+    -webkit-transition-timing-function: linear, linear, ease;
+    transition-timing-function: linear, linear, ease;
+    -webkit-overflow-scrolling: touch;
+    /* padding-right: 7em; */
+    /* padding-left: 7em; */
+    margin-left: 18em;
+    margin-top: 10em;
+    /* margin-right: 21em; */
+}
+
+#tabb {
+
+}
+
+.Clicked
+{
+    float: left;
+    display: block;
+    background-color: red;
+    padding: 5px 38px 3px 49px;
+    color: Black;
+    font-weight: bold;
+    color: White;
+    /* border-radius: 1em; */
+}
+
+#tablebox {
+    padding-left: 17em;
+    padding-right 17em;
+    padding-top: 8em;
+}
+
