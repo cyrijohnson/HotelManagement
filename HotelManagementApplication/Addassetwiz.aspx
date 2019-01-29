@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
     <link rel="stylesheet" href="Content/AddAssetWiz/Main.css" />
     <link href="Content/Dashboard/material-dashboard.css" rel="stylesheet" />
-
 </head>
+
 <body class="dark-edition">
     <form runat="server">
         <div class="wrapper ">
@@ -22,7 +22,6 @@
                 <table id="tabb" runat="server">
                     <tr>
                         <td>
-
                             <asp:Button Text="Complete Address" BorderStyle="None" ID="Tab1" CssClass="Initial" runat="server"
                                 OnClick="Tab1_Click" />
                             <asp:Button Text="Agency and Rooms" BorderStyle="None" ID="Tab2" CssClass="Initial" runat="server"
@@ -119,7 +118,7 @@
                                                                                 </div>
                                                                             </div>
 
-                                                                            <button type="submit" runat="server" onserverclick="address_click" class="btn btn-primary pull-right" runat="server">Update Address</button>
+                                                                            <button type="submit" runat="server" onserverclick="address_click" class="btn btn-primary pull-right">Update Address</button>
                                                                             <div class="clearfix"></div>
                                                                         </div>
                                                                     </div>
@@ -166,7 +165,7 @@
                                                                                 <div class="col-md-10">
                                                                                     <div class="form-group">
                                                                                         <label class="bmd-label-floating">Advertised in </label>
-                                                                                        <asp:CheckBox ID="checkbox1" runat="server" Text="    bookings.com" class="form-control"/>  
+                                                                                        <asp:CheckBox ID="checkbox1" runat="server" Text="    bookings.com" class="form-control" />
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -174,15 +173,7 @@
                                                                                 <div class="col-md-10">
                                                                                     <div class="form-group">
                                                                                         <label class="bmd-label-floating">Advertised in </label>
-                                                                                        <asp:CheckBox ID="checkbox2" runat="server" Text="    agoda.com" class="form-control"/> 
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="row">
-                                                                                <div class="col-md-10">
-                                                                                    <div class="form-group">
-                                                                                         <label class="bmd-label-floating">Advertised in </label>
-                                                                                        <asp:CheckBox ID="checkbox3" runat="server" Text="    trivago.com" class="form-control"/> 
+                                                                                        <asp:CheckBox ID="checkbox2" runat="server" Text="    agoda.com" class="form-control" />
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -190,7 +181,15 @@
                                                                                 <div class="col-md-10">
                                                                                     <div class="form-group">
                                                                                         <label class="bmd-label-floating">Advertised in </label>
-                                                                                        <asp:CheckBox ID="checkbox4" runat="server" Text="    oyorooms.com" class="form-control"/> 
+                                                                                        <asp:CheckBox ID="checkbox3" runat="server" Text="    trivago.com" class="form-control" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-10">
+                                                                                    <div class="form-group">
+                                                                                        <label class="bmd-label-floating">Advertised in </label>
+                                                                                        <asp:CheckBox ID="checkbox4" runat="server" Text="    oyorooms.com" class="form-control" />
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -202,7 +201,6 @@
                                                             </div>
                                                         </div>
                                                     </div>
-
                                                     <script>
                                                         const x = new Date().getFullYear();
                                                         let date = document.getElementById('date');
@@ -227,10 +225,8 @@
                         </td>
                     </tr>
                 </table>
-
             </div>
         </div>
     </form>
 </body>
-
 </html>
