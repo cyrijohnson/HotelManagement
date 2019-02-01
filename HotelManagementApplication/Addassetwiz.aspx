@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
     <link rel="stylesheet" href="Content/AddAssetWiz/Main.css" />
     <link href="Content/Dashboard/material-dashboard.css" rel="stylesheet" />
-</head>
 
+</head>
 <body class="dark-edition">
     <form runat="server">
         <div class="wrapper ">
@@ -22,6 +22,7 @@
                 <table id="tabb" runat="server">
                     <tr>
                         <td>
+
                             <asp:Button Text="Complete Address" BorderStyle="None" ID="Tab1" CssClass="Initial" runat="server"
                                 OnClick="Tab1_Click" />
                             <asp:Button Text="Agency and Rooms" BorderStyle="None" ID="Tab2" CssClass="Initial" runat="server"
@@ -118,7 +119,7 @@
                                                                                 </div>
                                                                             </div>
 
-                                                                            <button type="submit" runat="server" onserverclick="address_click" class="btn btn-primary pull-right">Update Address</button>
+                                                                            <button type="submit" runat="server" onserverclick="address_click" class="btn btn-primary pull-right" runat="server">Update Address</button>
                                                                             <div class="clearfix"></div>
                                                                         </div>
                                                                     </div>
@@ -208,15 +209,59 @@
                                                     </script>
                                                 </div>
                                             </td>
-                                        </tr>
-                                    </table>
+                                        </tr>   
+                                    </table>   
                                 </asp:View>
                                 <asp:View ID="View3" runat="server">
                                     <table style="width: 100%; border-width: 1px; border-color: #666; border-style: solid">
                                         <tr>
                                             <td>
-                                                <h3>View 3
-                                                </h3>
+                                                <div class="main-panelA">
+                                                    <div class="content">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-8">
+                                                                    <div class="card">
+                                                                        <div class="card-header card-header-primary">
+                                                                            <h4 class="card-title">Categories</h4>
+                                                                            <p class="card-category">Please keyin the categories and the number of rooms</p>
+                                                                        </div>
+                                                                        <div class="card-body">
+
+                                                                            <div class="row">
+                                                                                <div class="col-md-10">
+                                                                                    <div class="form-group">
+                                                                                        <label class="bmd-label-floating">Total number of rooms</label>
+                                                                                        <asp:TextBox ID="TextBox2" runat="server" type="text" class="form-control" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-10">
+                                                                                    <div class="form-group">
+                                                                                        <label class="bmd-label-floating">Total number of rooms</label>
+                                                                                        <asp:TextBox ID="TextBox3" runat="server" type="text" class="form-control" />
+                                                                                    </div>
+                                                                                </div
+                                                                            <asp:Panel ID="pnlTextBoxes" runat="server">
+                                                                            </asp:Panel>
+                                                                            <hr />
+                                                                            <asp:Button ID="btnAdd" runat="server" Text="Add New" OnClick="AddTextBox" />
+                                                                            <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="Save" />
+                                                                            <button type="submit" runat="server" onserverclick="adddata_click" class="btn btn-primary pull-right">Complete Configuration</button>
+                                                                            <div class="clearfix"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        const x = new Date().getFullYear();
+                                                        let date = document.getElementById('date');
+                                                        date.innerHTML = '&copy; ' + x + date.innerHTML;
+                                                    </script>
+                                                </div>
                                             </td>
                                         </tr>
                                     </table>
@@ -225,6 +270,7 @@
                         </td>
                     </tr>
                 </table>
+
             </div>
         </div>
     </form>
