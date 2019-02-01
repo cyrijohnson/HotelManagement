@@ -209,8 +209,8 @@
                                                     </script>
                                                 </div>
                                             </td>
-                                        </tr>   
-                                    </table>   
+                                        </tr>
+                                    </table>
                                 </asp:View>
                                 <asp:View ID="View3" runat="server">
                                     <table style="width: 100%; border-width: 1px; border-color: #666; border-style: solid">
@@ -236,13 +236,7 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="row">
-                                                                                <div class="col-md-10">
-                                                                                    <div class="form-group">
-                                                                                        <label class="bmd-label-floating">Total number of rooms</label>
-                                                                                        <asp:TextBox ID="TextBox3" runat="server" type="text" class="form-control" />
-                                                                                    </div>
-                                                                                </div
+
                                                                             <asp:Panel ID="pnlTextBoxes" runat="server">
                                                                             </asp:Panel>
                                                                             <hr />
