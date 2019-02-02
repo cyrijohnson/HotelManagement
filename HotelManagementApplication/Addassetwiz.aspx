@@ -22,7 +22,6 @@
                 <table id="tabb" runat="server">
                     <tr>
                         <td>
-
                             <asp:Button Text="Complete Address" BorderStyle="None" ID="Tab1" CssClass="Initial" runat="server"
                                 OnClick="Tab1_Click" />
                             <asp:Button Text="Agency and Rooms" BorderStyle="None" ID="Tab2" CssClass="Initial" runat="server"
@@ -239,9 +238,12 @@
                                                                             <div class="row">
                                                                                 <div class="col-md-10">
                                                                                     <div class="form-group">
+                                                                                        <label class="bmd-label-floating">Enter the category names and Number of Rooms</label>
                                                                                         <hr />
+                                                                                        
                                                                                         <asp:Panel ID="pnlTextBoxes" runat="server">
                                                                                         </asp:Panel>
+                                                                                      
                                                                                         <hr />
                                                                                     </div>
                                                                                 </div>
