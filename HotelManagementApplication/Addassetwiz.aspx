@@ -236,10 +236,16 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-
-                                                                            <asp:Panel ID="pnlTextBoxes" runat="server">
-                                                                            </asp:Panel>
-                                                                            <hr />
+                                                                            <div class="row">
+                                                                                <div class="col-md-10">
+                                                                                    <div class="form-group">
+                                                                                        <hr />
+                                                                                        <asp:Panel ID="pnlTextBoxes" runat="server">
+                                                                                        </asp:Panel>
+                                                                                        <hr />
+                                                                                    </div>
+                                                                                </div>
+                                                                                 </div>
                                                                             <asp:Button ID="btnAdd" runat="server" Text="Add New" OnClick="AddTextBox" />
                                                                             <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="Save" />
                                                                             <button type="submit" runat="server" onserverclick="adddata_click" class="btn btn-primary pull-right">Complete Configuration</button>

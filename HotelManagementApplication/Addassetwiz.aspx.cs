@@ -85,12 +85,26 @@ namespace HotelManagementApplication
         {
             int index = pnlTextBoxes.Controls.OfType<TextBox>().ToList().Count + 1;
             this.CreateTextBox("txtDynamic" + index);
+            int index2 = pnlTextBoxes.Controls.OfType<TextBox>().ToList().Count + 1;
+            this.CreateTextBox2("txtDynamic" + index);
         }
 
         private void CreateTextBox(string id)
         {
             TextBox txt = new TextBox();
             txt.ID = id;
+            txt.CssClass = "form-control";
+            pnlTextBoxes.Controls.Add(txt);
+
+            Literal lt = new Literal();
+            lt.Text = "<br />";
+            pnlTextBoxes.Controls.Add(lt);
+        }
+        private void CreateTextBox2(string id)
+        {
+            TextBox txt = new TextBox();
+            txt.ID = id;
+            txt.CssClass = "form-control2";
             pnlTextBoxes.Controls.Add(txt);
 
             Literal lt = new Literal();
