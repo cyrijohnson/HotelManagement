@@ -18,7 +18,7 @@ namespace HotelManagementApplication
            
             string param = Request.QueryString["uname"];
            // uname = param.Substring(0, (param.Length));
-            uname = "cyril39999@gmail.com";
+            uname = "aaaa@gmail.com";
             try
             {
                 alttext.Visible = false;
