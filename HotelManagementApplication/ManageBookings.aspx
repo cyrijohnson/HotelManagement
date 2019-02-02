@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" href="Images/dashboard.png">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="Content/Mngbookings/material-mngbookings.css" />
   <link href="Content/Dashboard/material-dashboard.css" rel="stylesheet" />
 </head>
 
@@ -79,14 +79,14 @@
         </ul>
       </div>
     </div>
-    <div class="main-panel" style="background-color:black;">
+    <div class="main-panel">
       
-      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="javascript:void(0)">Dashboard</a>
+            <a class="navbar-brand" href="javascript:void(0)">Manage Bookings</a>
           </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation" data-target="#navigation-example">
             <span class="sr-only">Toggle navigation</span>
             <span class="navbar-toggler-icon icon-bar"></span>
             <span class="navbar-toggler-icon icon-bar"></span>
@@ -108,11 +108,41 @@
         </div>
       </nav>
   
-      <div class="content">
-        <div class="container-fluid">
-      
-        </div>
-      </div>
+      <asp:Table id="tiletable" runat="server">
+                <asp:TableRow>
+                    <asp:TableCell runat="server">
+                        <div class="atile" id="tile1">
+                            <div class="tiletext">
+                                Create Bookings
+                            </div>
+                        </div>
+                    </asp:TableCell>
+
+                    <asp:TableCell runat="server">
+                        <div class="atile" id="tile2">
+                            <div class="tiletext">
+                                Check Out
+                            </div>
+                        </div>
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell runat="server">
+                        <div class="atile" id="tile3">
+                            <div class="tiletext">
+                                View Recent Bookings
+                            </div>
+                        </div>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <div class="atile" id="tile4">
+                            <div class="tiletext">
+                                View Upcoming Bookings
+                            </div>
+                        </div>
+                    </asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
       <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">

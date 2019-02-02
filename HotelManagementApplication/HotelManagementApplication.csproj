@@ -198,7 +198,9 @@
     <Content Include="Contacts.aspx" />
     <Content Include="Content\About\Aboutpage.css" />
     <Content Include="Content\AddAssetWiz\Main.css" />
+    <Content Include="Content\CheckOut\CheckOut.css" />
     <Content Include="Content\Contact\contact.css" />
+    <Content Include="Content\CreateBookings\CreateBookings.css" />
     <Content Include="Content\Dashboard\material-dashboard.css" />
     <Content Include="Content\Help\Help.css" />
     <Content Include="Content\loginpage.css" />
@@ -210,9 +212,12 @@
     <Content Include="Content\loginpage\select2.min.css" />
     <Content Include="Content\loginpage\main.css" />
     <Content Include="Content\loginpage\util.css" />
+    <Content Include="Content\Mngbookings\material-mngbookings.css" />
     <Content Include="Content\Roomconfig\roomconfig.css" />
     <Content Include="Content\signup\main.css" />
     <Content Include="Content\user profile\demo.css" />
+    <Content Include="Content\Viewrecentbookings\viewrecentbook.css" />
+    <Content Include="Content\Viewupcomingbook\Viewupcomingbook.css" />
     <Content Include="Dashboard.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Help.aspx" />
@@ -231,6 +236,10 @@
     <Content Include="Images\user.png" />
     <Content Include="Images\welcome image.jpeg" />
     <Content Include="loginpage.aspx" />
+    <Content Include="Manage Bookings\Check out.aspx" />
+    <Content Include="Manage Bookings\Create bookings.aspx" />
+    <Content Include="Manage Bookings\View recent bookings.aspx" />
+    <Content Include="Manage Bookings\View upcoming bookings.aspx" />
     <Content Include="ManageBookings.aspx" />
     <Content Include="RoomConfiguration.aspx" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -299,6 +308,34 @@
     <Compile Include="loginpage.aspx.designer.cs">
       <DependentUpon>loginpage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Manage Bookings\Check out.aspx.cs">
+      <DependentUpon>Check out.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage Bookings\Check out.aspx.designer.cs">
+      <DependentUpon>Check out.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Bookings\Create bookings.aspx.cs">
+      <DependentUpon>Create bookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage Bookings\Create bookings.aspx.designer.cs">
+      <DependentUpon>Create bookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Bookings\View recent bookings.aspx.cs">
+      <DependentUpon>View recent bookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage Bookings\View recent bookings.aspx.designer.cs">
+      <DependentUpon>View recent bookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Bookings\View upcoming bookings.aspx.cs">
+      <DependentUpon>View upcoming bookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage Bookings\View upcoming bookings.aspx.designer.cs">
+      <DependentUpon>View upcoming bookings.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ManageBookings.aspx.cs">
       <DependentUpon>ManageBookings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -352,7 +389,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Manage Bookings\" />
     <Folder Include="Models\" />
     <Folder Include="Views\" />
   </ItemGroup>
