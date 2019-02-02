@@ -352,6 +352,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Manage Bookings\" />
     <Folder Include="Models\" />
     <Folder Include="Views\" />
   </ItemGroup>
