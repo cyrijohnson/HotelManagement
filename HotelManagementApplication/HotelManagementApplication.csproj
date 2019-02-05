@@ -236,10 +236,10 @@
     <Content Include="Images\user.png" />
     <Content Include="Images\welcome image.jpeg" />
     <Content Include="loginpage.aspx" />
-    <Content Include="Manage Bookings\Check out.aspx" />
-    <Content Include="Manage Bookings\Create bookings.aspx" />
-    <Content Include="Manage Bookings\View recent bookings.aspx" />
-    <Content Include="Manage Bookings\View upcoming bookings.aspx" />
+    <Content Include="Manage Bookings\Checkout.aspx" />
+    <Content Include="Manage Bookings\Createbookings.aspx" />
+    <Content Include="Manage Bookings\Viewrecentbookings.aspx" />
+    <Content Include="Manage Bookings\Viewupcomingbookings.aspx" />
     <Content Include="ManageBookings.aspx" />
     <Content Include="RoomConfiguration.aspx" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -308,33 +308,33 @@
     <Compile Include="loginpage.aspx.designer.cs">
       <DependentUpon>loginpage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Manage Bookings\Check out.aspx.cs">
-      <DependentUpon>Check out.aspx</DependentUpon>
+    <Compile Include="Manage Bookings\Checkout.aspx.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Manage Bookings\Check out.aspx.designer.cs">
-      <DependentUpon>Check out.aspx</DependentUpon>
+    <Compile Include="Manage Bookings\Checkout.aspx.designer.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Manage Bookings\Create bookings.aspx.cs">
-      <DependentUpon>Create bookings.aspx</DependentUpon>
+    <Compile Include="Manage Bookings\Createbookings.aspx.cs">
+      <DependentUpon>Createbookings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Manage Bookings\Create bookings.aspx.designer.cs">
-      <DependentUpon>Create bookings.aspx</DependentUpon>
+    <Compile Include="Manage Bookings\Createbookings.aspx.designer.cs">
+      <DependentUpon>Createbookings.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Manage Bookings\View recent bookings.aspx.cs">
-      <DependentUpon>View recent bookings.aspx</DependentUpon>
+    <Compile Include="Manage Bookings\Viewrecentbookings.aspx.cs">
+      <DependentUpon>Viewrecentbookings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Manage Bookings\View recent bookings.aspx.designer.cs">
-      <DependentUpon>View recent bookings.aspx</DependentUpon>
+    <Compile Include="Manage Bookings\Viewrecentbookings.aspx.designer.cs">
+      <DependentUpon>Viewrecentbookings.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Manage Bookings\View upcoming bookings.aspx.cs">
-      <DependentUpon>View upcoming bookings.aspx</DependentUpon>
+    <Compile Include="Manage Bookings\Viewupcomingbookings.aspx.cs">
+      <DependentUpon>Viewupcomingbookings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Manage Bookings\View upcoming bookings.aspx.designer.cs">
-      <DependentUpon>View upcoming bookings.aspx</DependentUpon>
+    <Compile Include="Manage Bookings\Viewupcomingbookings.aspx.designer.cs">
+      <DependentUpon>Viewupcomingbookings.aspx</DependentUpon>
     </Compile>
     <Compile Include="ManageBookings.aspx.cs">
       <DependentUpon>ManageBookings.aspx</DependentUpon>

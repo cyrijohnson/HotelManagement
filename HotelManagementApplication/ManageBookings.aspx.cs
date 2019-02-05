@@ -13,5 +13,21 @@ namespace HotelManagementApplication
         {
 
         }
+        public void Create_bookings(object sender, EventArgs e)
+        {
+            Response.Redirect("loginpage.aspx");
+        }
+        public void Check_out(object sender, EventArgs e)
+        {
+
+        }
+        public void View_recent_bookings(object sender, EventArgs e)
+        {
+
+        }
+        public void View_upcoming_bookings(object sender, EventArgs e)
+        {
+
+        }
     }
 }

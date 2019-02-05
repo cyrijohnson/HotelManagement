@@ -1,19 +1,19 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ManageBookings.aspx.cs" Inherits="HotelManagementApplication.ManageBookings" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Createbookings.aspx.cs" Inherits="HotelManagementApplication.Manage_Bookings.Create_Bookings" %>
 
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
 
-<head>
-  <title>Welcome User_Name</title>
-
-  <meta charset="utf-8">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Create Bookings</title>
+    <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <link rel="icon" type="image/png" href="Images/dashboard.png">
+  <link rel="icon" type="image/png" href="Images/dashboard.png" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
   <link rel="stylesheet" href="Content/Mngbookings/material-mngbookings.css" />
-  <link href="Content/Dashboard/material-dashboard.css" rel="stylesheet" />
+  <link href="../Content/Dashboard/material-dashboard.css" rel="stylesheet"/>
+  <link href="../Content/CreateBookings/CreateBookings.css" rel="stylesheet" />
 </head>
 
 <body class="dark-edition">
@@ -84,7 +84,7 @@
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="javascript:void(0)">Manage Bookings</a>
+            <a class="navbar-brand" href="javascript:void(0)">Create Bookings</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation" data-target="#navigation-example">
             <span class="sr-only">Toggle navigation</span>
@@ -107,66 +107,6 @@
           </div>
         </div>
       </nav>
-  
-      <asp:Table id="tiletable" runat="server">
-                <asp:TableRow>
-                    <asp:TableCell>
-                        <div class="atile" id="tile1">
-                            <a href="Manage Bookings/Createbookings.aspx">
-                            <div class="tiletext">
-                                Create Bookings
-                            </div>
-                                </a>
-                        </div>
-                            
-                    </asp:TableCell>
-
-                    <asp:TableCell runat="server">
-                        <div class="atile" id="tile2" runat="server" onserverclick="Check_out">
-                            <a href="Manage Bookings/Check out.aspx">
-                            <div class="tiletext">
-                                Check Out
-                            </div>
-                                </a>
-                        </div>
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell runat="server">
-                        <div class="atile" id="tile3">
-                            <a href="Manage Bookings/Viewrecentbookings.aspx">
-                            <div class="tiletext">
-                                View Recent Bookings
-                            </div>
-                                </a>
-                        </div>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <div class="atile" id="tile4">
-                            <a href="Manage Bookings/Viewupcomingbookings.aspx">
-                            <div class="tiletext">
-                                View Upcoming Bookings
-                            </div>
-                                </a>
-                        </div>
-                    </asp:TableCell>
-                </asp:TableRow>
-            </asp:Table>
-      <footer class="footer">
-        <div class="container-fluid">
-          <nav class="float-left">
-            <ul>
-              <li>
-                <a href="Dashboard.aspx">
-                  User Name
-                </a>
-              </li>
-            </ul>
-          </nav>
-          
-       
-        </div>
-      </footer>
     </div>
   </div>
 
