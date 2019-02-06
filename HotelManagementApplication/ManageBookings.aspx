@@ -123,7 +123,7 @@
 
                     <asp:TableCell runat="server">
                         <div class="atile" id="tile2" runat="server" onserverclick="Check_out">
-                            <a href="Manage Bookings/Check out.aspx">
+                            <a href="Manage Bookings/Checkout.aspx">
                             <div class="tiletext">
                                 Check Out
                             </div>

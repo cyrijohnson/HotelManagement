@@ -28,19 +28,19 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="Dashboard.aspx">
+            <a class="nav-link" href="../Dashboard.aspx">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="UserProfile.aspx">
+            <a class="nav-link" href="../UserProfile.aspx">
               <i class="material-icons">person</i>
               <p>User Profile</p>
             </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="ManageBookings.aspx">
+            <a class="nav-link" href="../ManageBookings.aspx">
               <i class="material-icons">book</i>
               <p>Manage Bookings</p>
             </a>
