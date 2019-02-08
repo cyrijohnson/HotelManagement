@@ -250,7 +250,7 @@
                                                                                  </div>
                                                                             <asp:Button ID="btnAdd" runat="server" Text="Add New" OnClick="AddTextBox" />
                                                                             <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="Save" />
-                                                                            <button type="submit" runat="server" onserverclick="adddata_click" class="btn btn-primary pull-right">Complete Configuration</button>
+                                                                            <button type="submit" runat="server" onserverclick="complete_click" class="btn btn-primary pull-right">Complete Configuration</button>
                                                                             <div class="clearfix"></div>
                                                                         </div>
                                                                     </div>

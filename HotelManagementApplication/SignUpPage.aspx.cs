@@ -16,7 +16,7 @@ namespace HotelManagementApplication
         }
         public void signupclick(object sender, EventArgs e)
         {
-            string cstatus = "true";
+            string cstatus = "false";
             bool flag1, flag2, flag3, flag4;
             DateTime dob = Convert.ToDateTime("01-01-1999");
             string name = TextBox1.Text + " " + TextBox2.Text;

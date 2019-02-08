@@ -141,5 +141,16 @@ namespace HotelManagementApplication
                 }
             }
         }
+        public void complete_click(object sender,EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Cyril Johnson\Source\Repos\HotelManagement\HotelManagementApplication\App_Data\SignUpDB.mdf;Integrated Security=True");
+            SqlCommand cmd = new SqlCommand();
+            con.Open();
+            cmd.Connection = con;
+            cmd.CommandText = "UPDATE LOGINDAT SET [cstatus]='true' WHERE [email]='"+uname+"';";
+            cmd.ExecuteNonQuery();
+            con.Close();
+            Response.Redirect("Dashboard.aspx?uname=" + Server.UrlEncode(uname));
+        }
     }
 }
