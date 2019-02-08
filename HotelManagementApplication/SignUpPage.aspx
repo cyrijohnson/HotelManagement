@@ -56,7 +56,7 @@
                     
                 </div>
                 <button runat="server" onserverclick="signupclick">Sign Up</button>
-                <a href="login.aspx">
+                <a href="loginpage.aspx">
                     <p>Already have an account? Login </p>
                 </a>
             </div>
