@@ -50,7 +50,7 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./dashboard.html">
+            <a class="nav-link" href="BillingandFinance.aspx">
               <i class="material-icons">printer</i>
               <p>Billing and Finance</p>
             </a>

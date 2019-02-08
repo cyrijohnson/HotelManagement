@@ -120,6 +120,7 @@ namespace HotelManagementApplication
             foreach (string key in keys)
             {
                 this.CreateTextBox("txtDynamic" + i);
+                this.CreateTextBox2("txtDynamicval" + i);
                 i++;
             }
         }
