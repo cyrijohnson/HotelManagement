@@ -12604,6 +12604,7 @@ fieldset[disabled][disabled] .has-rose .form-control,
 .bmd-form-group:not(.has-success):not(.has-danger) [class^='bmd-label'].bmd-label-floating,
 .bmd-form-group:not(.has-success):not(.has-danger) [class*=' bmd-label'].bmd-label-floating {
   color: #AAAAAA;
+
 }
 
 .bmd-form-group [class^='bmd-label'],
@@ -12618,7 +12619,8 @@ fieldset[disabled][disabled] .has-rose .form-control,
   will-change: left, top, contents;
   margin: 0;
   line-height: 1.4;
-  font-weight: 400;
+  font-weight: bold;
+  
 }
 
 .bmd-form-group.is-filled .bmd-label-placeholder {
@@ -19951,9 +19953,11 @@ Copyright (c) 2015 Daniel Eden
   color: #a9afbbd1;
 }
 
-.dark-edition .form-group label {
-  color: #a9afbbd1;
-}
+    .dark-edition .form-group label {
+        color: #a9afbbd1;
+        font-weight: bold;
+        font-size: initial;
+    }
 
 .dark-edition [class^='bmd-label'],
 .dark-edition [class*=' bmd-label'] {

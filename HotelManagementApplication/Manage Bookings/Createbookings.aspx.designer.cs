@@ -11,5 +11,23 @@ namespace HotelManagementApplication.Manage_Bookings {
     
     
     public partial class Create_Bookings {
+        
+        /// <summary>
+        /// indate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox indate;
+        
+        /// <summary>
+        /// intime control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox intime;
     }
 }

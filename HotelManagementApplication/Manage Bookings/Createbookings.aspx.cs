@@ -11,7 +11,11 @@ namespace HotelManagementApplication.Manage_Bookings
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
+            DateTime dateTime = DateTime.UtcNow.Date;
+            indate.Text = dateTime.ToString("dd/MM/yyyy");
+            intime.Text=DateTime.Now.ToString("HH:mm:ss");
+            
 
-		}
+        }
 	}
 }
