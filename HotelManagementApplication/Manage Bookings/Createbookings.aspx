@@ -136,19 +136,19 @@
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">First Name</label>
-                                                    <asp:Textbox runat="server" Cssclass="form-control"/>
+                                                    <asp:TextBox runat="server" CssClass="form-control" />
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Last Name</label>
-                                                    <asp:Textbox runat="server" Cssclass="form-control"/>
+                                                    <asp:TextBox runat="server" CssClass="form-control" />
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Room No.</label>
-                                                    <asp:Textbox runat="server" Cssclass="form-control"/>
+                                                    <asp:TextBox runat="server" CssClass="form-control" />
                                                 </div>
                                             </div>
                                         </div>
@@ -156,19 +156,19 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Contact No.</label>
-                                                    <asp:Textbox runat="server" Cssclass="form-control"/>
+                                                    <asp:TextBox runat="server" CssClass="form-control" />
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Address</label>
-                                                   <asp:Textbox runat="server" Cssclass="form-control" placeholder="Flat No."/>
-                                                    <asp:Textbox runat="server" Cssclass="form-control" placeholder="Street Name"/>
-                                                    <asp:Textbox runat="server" Cssclass="form-control" placeholder="City"/>
-                                                    <asp:Textbox runat="server" Cssclass="form-control" placeholder="District"/>
-                                                    <asp:Textbox runat="server" Cssclass="form-control" placeholder="State"/>
-                                                    <asp:Textbox runat="server" Cssclass="form-control" placeholder="Nationality"/>
-                                                    <asp:Textbox runat="server" Cssclass="form-control" placeholder="Pincode"/>
+                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Flat No." />
+                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Street Name" />
+                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="City" />
+                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="District" />
+                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="State" />
+                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Nationality" />
+                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Pincode" />
                                                 </div>
                                             </div>
                                         </div>
@@ -176,19 +176,19 @@
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">No. of Occuapants</label>
-                                                    <asp:Textbox runat="server" Cssclass="form-control" placeholder="Male"/>
+                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Male" />
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                     <label class="bmd-label-floating"></label>
-                                                   <asp:Textbox runat="server" Cssclass="form-control" placeholder="Female"/>
+                                                    <label class="bmd-label-floating"></label>
+                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Female" />
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                     <label class="bmd-label-floating"></label>
-                                                    <asp:Textbox runat="server" Cssclass="form-control" placeholder="Children"/>
+                                                    <label class="bmd-label-floating"></label>
+                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Children" />
                                                 </div>
                                             </div>
                                         </div>
@@ -196,20 +196,20 @@
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Passport</label>
-                                                    <asp:Textbox runat="server" Cssclass="form-control"/>
+                                                    <asp:TextBox runat="server" CssClass="form-control" />
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Aadhar ID</label>
-                                                    <asp:Textbox runat="server" Cssclass="form-control"/>
+                                                    <asp:TextBox runat="server" CssClass="form-control" />
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Other ID</label>
-                                                    <asp:Textbox runat="server" Cssclass="form-control" placeholder="Name of Scanned Document"/>
-                                                    <asp:Textbox runat="server" Cssclass="form-control" placeholder="Scan ID"/>
+                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Name of Scanned Document" />
+                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Scan ID" />
                                                 </div>
                                             </div>
                                         </div>
@@ -217,15 +217,15 @@
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Check-in</label>
-                                                    <asp:Textbox ID="indate" runat="server" Cssclass="form-control" placeholder="Date"/>
-                                                    <asp:Textbox ID="intime" runat="server" Cssclass="form-control" placeholder="Time"/>
+                                                    <asp:TextBox ID="indate" runat="server" CssClass="form-control" placeholder="Date" />
+                                                    <asp:TextBox ID="intime" runat="server" CssClass="form-control" placeholder="Time" />
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
-                                                     <div class="form-group">
+                                                <div class="form-group">
                                                     <label class="bmd-label-floating">Check-Out</label>
-                                                    <asp:Textbox runat="server" Cssclass="form-control" placeholder="Date"/>
-                                                    <asp:Textbox runat="server" Cssclass="form-control" placeholder="Time"/>
+                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Date" />
+                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Time" />
                                                 </div>
                                             </div>
                                         </div>

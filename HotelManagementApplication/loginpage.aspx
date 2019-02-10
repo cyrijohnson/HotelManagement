@@ -1,12 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="loginpage.aspx.cs" Inherits="HotelManagementApplication.loginpage" %>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Member Login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
     <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="Images/26-512.png" />
     <!--===============================================================================================-->
@@ -26,33 +24,26 @@
     <!--===============================================================================================-->
 </head>
 <body>
-
     <form id="form1" runat="server">
-
         <div class="limiter">
             <div class="container-login100">
                 <div class="wrap-login100">
                     <div class="login100-pic js-tilt" data-tilt>
                         <img src="Images/img-01.png" alt="IMG">
                         <asp:Label ID="Label1" runat="server" Text="" ForeColor="Red"></asp:Label>
-
                     </div>
-
                     <span class="login100-form-title">Member Login
                     </span>
-
                     <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
                         <asp:TextBox class="input100 inputalt" ID="Textbox1" runat="server" type="text" name="email" placeholder="Email" />
                         <span class="focus-input100"></span>
                         <span class="symbol-input100"></span>
                     </div>
-
                     <div class="wrap-input100 validate-input" data-validate="Password is required">
                         <asp:TextBox class="input100 inputalt" ID="Textbox2" runat="server" type="password" name="pass" placeholder="Password" />
                         <span class="focus-input100"></span>
                         <span class="symbol-input100"></span>
                     </div>
-
                     <div class="container-login100-form-btn">
                         <asp:Button Text="Login" runat="server" OnClick="loginclick" class="login100-form-btn" />
                     </div>
@@ -72,10 +63,8 @@
                         <a class="txt2" href="#">Username / Password?
                         </a>
                     </div>
-
                     <div class="text-center p-t-136">
-                        <a class="txt2" href="SignUpPage.aspx">Create your Account
-							
+                        <a class="txt2" href="SignUpPage.aspx">Create your Account			
                         </a>
                     </div>
                 </div>
@@ -90,7 +79,6 @@
                 console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
             }
         </script>
-
         <!--===============================================================================================-->
         <script src="Scripts/jquery-3.2.1.min.js"></script>
         <!--===============================================================================================-->
@@ -107,8 +95,6 @@
         </script>
         <!--===============================================================================================-->
         <script src="Scripts/main.js"></script>
-
     </form>
-
 </body>
 </html>
