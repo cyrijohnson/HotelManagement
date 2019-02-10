@@ -195,6 +195,7 @@
     <Content Include="App_Data\SignUpDB_log.ldf">
       <DependentUpon>SignUpDB.mdf</DependentUpon>
     </Content>
+    <Content Include="BillingandFinance.aspx" />
     <Content Include="Contacts.aspx" />
     <Content Include="Content\About\Aboutpage.css" />
     <Content Include="Content\AddAssetWiz\Main.css" />
@@ -277,6 +278,13 @@
       <DependentUpon>Addassetwiz.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BillingandFinance.aspx.cs">
+      <DependentUpon>BillingandFinance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BillingandFinance.aspx.designer.cs">
+      <DependentUpon>BillingandFinance.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contacts.aspx.cs">
       <DependentUpon>Contacts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

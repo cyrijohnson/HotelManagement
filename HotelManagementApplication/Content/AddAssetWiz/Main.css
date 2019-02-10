@@ -48,12 +48,9 @@
 
 #tablebox {
     padding-left: 12em;
-    /* padding-right: 17em; */
+    padding-right: 17em; 
     padding-top: 4em;
 }
-
-/*******************************************************************************/
-
 #pnlTextBoxes {
     width: 21em;
 }
