@@ -196,24 +196,34 @@
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Passport</label>
-                                                    <asp:TextBox runat="server" CssClass="form-control"/>
-                                                    <asp:Button runat="server" Text="click" OnClick="upload_passport"/>
-                                                    
-
                                                 </div>
-                                            </div>
+                                                <div>
+                                                    <asp:FileUpload ID="FileUpload1" runat="server" />
+                                                    <asp:Label ID="lblmessage" runat="server" />
+                                                    </div>
+                                            </div> 
+                                        </div>
+                                        <div class="row">
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Aadhar ID</label>
-                                                    <asp:TextBox runat="server" CssClass="form-control" />
                                                 </div>
+                                                <div>
+                                                    <asp:FileUpload ID="FileUpload2" runat="server" class="btn btn-primary pull-right"/>
+                                                    <asp:Label ID="Label1" runat="server" />
+                                                    </div>
                                             </div>
+                                        </div>
+                                        <div class="row">
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Other ID</label>
                                                     <asp:TextBox runat="server" CssClass="form-control" placeholder="Name of Scanned Document" />
-                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Scan ID" />
                                                 </div>
+                                                <div>
+                                                    <asp:FileUpload ID="FileUpload3" runat="server" />
+                                                    <asp:Label ID="Label2" runat="server" />
+                                                    </div>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -252,7 +262,6 @@
                     </div>
                 </div>
             </div>
-
             <script>
                 const x = new Date().getFullYear();
                 let date = document.getElementById('date');
@@ -260,8 +269,6 @@
             </script>
         </div>
     </div>
-
-    
 </body>
 
 </html>
