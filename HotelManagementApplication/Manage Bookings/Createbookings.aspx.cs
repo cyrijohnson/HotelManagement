@@ -116,5 +116,16 @@ namespace HotelManagementApplication.Manage_Bookings
                 Label2.Text = sb.ToString();
             }
         }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Calendar1.Visible = true;
+        }
+
+        protected void Calendar1_SelectionChanged1(object sender, EventArgs e)
+        {
+            checkoutdate.Text = Calendar1.SelectedDate.ToLongDateString();
+            Calendar1.Visible = false;
+        }
     }
 }

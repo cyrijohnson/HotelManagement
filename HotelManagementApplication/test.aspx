@@ -7,18 +7,27 @@
     <title></title>
 </head>
 <body>
-   <form id="form1" runat="server">
-   
-      <div>
-         <h3> File Upload:</h3>
-         <br />
-         <asp:FileUpload ID="FileUpload1" runat="server" />
-         <br /><br />
-         <asp:Button ID="btnsave" runat="server" onclick="btnsave_Click"  Text="Save" style="width:85px" />
-         <br /><br />
-         <asp:Label ID="lblmessage" runat="server" />
-      </div>
-      
-   </form>
+
+    <form id="form1" runat="server">
+
+    <div>
+
+    </div>
+
+    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+
+    <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click">PickDate...</asp:LinkButton>
+
+        <asp:Calendar ID="Calendar1" runat="server" Visible="False" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" OnSelectionChanged="Calendar1_SelectionChanged1" Width="350px">
+            <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
+            <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
+            <OtherMonthDayStyle ForeColor="#999999" />
+            <SelectedDayStyle BackColor="#333399" ForeColor="White" />
+            <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
+            <TodayDayStyle BackColor="#CCCCCC" />
+        </asp:Calendar>
+
+    </form>
+
 </body>
 </html>

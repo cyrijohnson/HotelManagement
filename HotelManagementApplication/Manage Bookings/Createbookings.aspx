@@ -199,7 +199,7 @@
                                                     <label class="bmd-label-floating">Passport</label>
                                                 </div>
                                                 <div>
-                                                    <asp:FileUpload ID="FileUpload1" runat="server" />
+                                                    <asp:FileUpload ID="FileUpload1" runat="server" class="btn btn-primary pull-right" />
                                                     <asp:Label ID="lblmessage" runat="server" />
                                                     </div>
                                             </div> 
@@ -222,7 +222,7 @@
                                                     <asp:TextBox runat="server" CssClass="form-control" placeholder="Name of Scanned Document" />
                                                 </div>
                                                 <div>
-                                                    <asp:FileUpload ID="FileUpload3" runat="server" />
+                                                    <asp:FileUpload ID="FileUpload3" runat="server" class="btn btn-primary pull-right" />
                                                     <asp:Label ID="Label2" runat="server" />
                                                     </div>
                                             </div>
@@ -238,11 +238,21 @@
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Check-Out</label>
-                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Date" />
+                                                    <asp:TextBox runat="server" ID="checkoutdate" CssClass="form-control" placeholder="Date" />
+                                                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">PickDate...</asp:LinkButton>
+                                                    <asp:Calendar ID="Calendar1" runat="server" Visible="False" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" OnSelectionChanged="Calendar1_SelectionChanged1" Width="350px">
+                                                        <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
+                                                        <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
+                                                        <OtherMonthDayStyle ForeColor="#999999" />
+                                                        <SelectedDayStyle BackColor="#333399" ForeColor="White" />
+                                                        <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
+                                                        <TodayDayStyle BackColor="#CCCCCC" />
+                                                    </asp:Calendar>
                                                     <asp:TextBox runat="server" CssClass="form-control" placeholder="Time" />
                                                 </div>
                                             </div>
                                         </div>
+                                        
                                         <!-- <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
@@ -270,6 +280,9 @@
             </script>
         </div>
     </div>
+    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+<script src="Scripts/jquery.dynDateTime.min.js" type="text/javascript"></script>
+<script src="Scripts/calendar-en.min.js" type="text/javascript"></script>
+<link href="Styles/calendar-blue.css" rel="stylesheet" type="text/css" />
 </body>
-
 </html>
