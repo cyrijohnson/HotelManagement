@@ -118,7 +118,7 @@
                                                                                 </div>
                                                                             </div>
 
-                                                                            <button type="submit" runat="server" onserverclick="address_click" class="btn btn-primary pull-right" runat="server">Update Address</button>
+                                                                            <button type="submit" runat="server" onserverclick="address_click" class="btn btn-primary pull-right">Update Address</button>
                                                                             <div class="clearfix"></div>
                                                                         </div>
                                                                     </div>
@@ -240,10 +240,18 @@
                                                                                     <div class="form-group">
                                                                                         <label class="bmd-label-floating">Enter the category names and Number of Rooms</label>
                                                                                         <hr />
-                                                                                        
-                                                                                        <asp:Panel ID="pnlTextBoxes" runat="server">
+                                                                                        <table runat="server">
+                                                                                            <tr>
+                                                                                                 <asp:Panel ID="pnlTextBoxes" runat="server">
                                                                                         </asp:Panel>
-                                                                                      
+  
+                                                                                            </tr>
+                                                                                           <tr>
+                                                                                                <asp:Panel ID="pnlTextBoxes2" runat="server">
+                                                                                        </asp:Panel>
+                                                                                           </tr>
+                                                                                        </table>
+                                                                                        
                                                                                         <hr />
                                                                                     </div>
                                                                                 </div>
