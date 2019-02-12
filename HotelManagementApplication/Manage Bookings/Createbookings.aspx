@@ -24,6 +24,7 @@
                 </a>
             </div>
             <div class="sidebar-wrapper">
+                <a href="Createbookings.aspx">Createbookings.aspx</a>
                 <ul class="nav">
                     <li class="nav-item">
                         <a class="nav-link" href="../Dashboard.aspx">
@@ -44,7 +45,7 @@
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="./dashboard.html">
+                        <a class="nav-link" href="../BillingandFinance.aspx">
                             <i class="material-icons">printer</i>
                             <p>Billing and Finance</p>
                         </a>
