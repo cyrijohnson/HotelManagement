@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -17,5 +18,33 @@ namespace HotelManagementApplication.Manage_Bookings
             
 
         }
-	}
+        protected void upload_passport(object sender, EventArgs e)
+        {
+            FileUpload FileUploadControl = new FileUpload();
+            if (FileUploadControl.HasFile)
+            {
+                try
+                {
+                    if (FileUploadControl.PostedFile.ContentType == "image/jpeg")
+                    {
+                        if (FileUploadControl.PostedFile.ContentLength < 102400)
+                        {
+                            string filename = Path.GetFileName(FileUploadControl.FileName);
+                            FileUploadControl.SaveAs(Server.MapPath("~/") + filename);
+                            
+                        }
+                        else { }
+                            
+                    }
+                    else
+                    { }
+                }
+                catch (Exception ex)
+                {
+                    
+                }
+            }
+        }
+
+    }
 }
