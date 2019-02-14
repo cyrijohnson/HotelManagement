@@ -137,19 +137,19 @@
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">First Name</label>
-                                                    <asp:TextBox runat="server" CssClass="form-control" />
+                                                    <asp:TextBox ID="fname" runat="server" CssClass="form-control" />
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Last Name</label>
-                                                    <asp:TextBox runat="server" CssClass="form-control" />
+                                                    <asp:TextBox ID="lname" runat="server" CssClass="form-control" />
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Room No.</label>
-                                                    <asp:TextBox runat="server" CssClass="form-control" />
+                                                    <asp:TextBox ID="roomno" runat="server" CssClass="form-control" />
                                                 </div>
                                             </div>
                                         </div>
@@ -157,7 +157,7 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Contact No.</label>
-                                                    <asp:TextBox runat="server" CssClass="form-control" />
+                                                    <asp:TextBox ID="contact" runat="server" CssClass="form-control" />
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
@@ -232,6 +232,15 @@
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Check-in</label>
                                                     <asp:TextBox ID="indate" runat="server" CssClass="form-control" placeholder="Date" />
+                                                    <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">PickDate...</asp:LinkButton>
+                                                    <asp:Calendar ID="Calendar2" runat="server" Visible="False" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" OnSelectionChanged="Calendar2_SelectionChanged1" Width="350px">
+                                                        <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
+                                                        <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
+                                                        <OtherMonthDayStyle ForeColor="#999999" />
+                                                        <SelectedDayStyle BackColor="#333399" ForeColor="White" />
+                                                        <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
+                                                        <TodayDayStyle BackColor="#CCCCCC" />
+                                                    </asp:Calendar>
                                                     <asp:TextBox ID="intime" runat="server" CssClass="form-control" placeholder="Time" />
                                                 </div>
                                             </div>
@@ -264,7 +273,7 @@
                         </div>
                       </div>
                     </div> -->
-                                        <button type="submit" class="btn btn-primary pull-right">Create Booking</button>
+                                        <button type="submit" class="btn btn-primary pull-right" runat="server">Create Booking</button>
                                         <div class="clearfix"></div>
                                     </form>
                                 </div>
@@ -280,9 +289,5 @@
             </script>
         </div>
     </div>
-    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
-<script src="Scripts/jquery.dynDateTime.min.js" type="text/javascript"></script>
-<script src="Scripts/calendar-en.min.js" type="text/javascript"></script>
-<link href="Styles/calendar-blue.css" rel="stylesheet" type="text/css" />
 </body>
 </html>

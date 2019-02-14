@@ -6,6 +6,8 @@ using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace HotelManagementApplication.Manage_Bookings
 {
@@ -124,8 +126,27 @@ namespace HotelManagementApplication.Manage_Bookings
 
         protected void Calendar1_SelectionChanged1(object sender, EventArgs e)
         {
-            checkoutdate.Text = Calendar1.SelectedDate.ToLongDateString();
+            checkoutdate.Text = Calendar1.SelectedDate.ToString("dd-MM-yyyy");
             Calendar1.Visible = false;
+        }
+        protected void LinkButton2_Click(object sender, EventArgs e)
+        {
+            Calendar2.Visible = true;
+        }
+        protected void Calendar2_SelectionChanged1(object sender, EventArgs e)
+        {
+            indate.Text = Calendar1.SelectedDate.ToString("dd-MM-yyyy");
+            Calendar2.Visible = false;
+        }
+        public void Create_Bookings_click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Cyril Johnson\Source\Repos\HotelManagement\HotelManagementApplication\App_Data\SignUpDB.mdf;Integrated Security=True");            SqlCommand cmd = new SqlCommand();
+            con.Open();
+            cmd.Connection = con;
+            cmd.CommandText = "INSERT INTO checkinform(SL,FirstName,LastName,Roomno,NumberofOccupants,Numberofchildren,flatno,StreetName,City,District,State," +
+                "Nationality,Pincode,Passport,Aadhar,Otherdocname,otherdoc,Checkindatetime) VALUES()";
+            cmd.ExecuteNonQuery();
+            con.Close();
         }
     }
 }

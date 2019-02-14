@@ -41,6 +41,7 @@
                     </div>
                     <div class="wrap-input100 validate-input" data-validate="Password is required">
                         <asp:TextBox class="input100 inputalt" ID="Textbox2" runat="server" type="password" name="pass" placeholder="Password" />
+                        <input type="text" runat="server" id="trans" value=""/>
                         <span class="focus-input100"></span>
                         <span class="symbol-input100"></span>
                     </div>
@@ -70,13 +71,27 @@
                 </div>
             </div>
         </div>
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
+        </asp:ScriptManager>
         <script>
             function onSignIn(googleUser) {
                 var profile = googleUser.getBasicProfile();
-                alert('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+                console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
                 console.log('Name: ' + profile.getName());
                 console.log('Image URL: ' + profile.getImageUrl());
                 console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+                document.getElementById("trans").value = profile.getEmail();
+                var name = "cyil";
+                var address="johnson"
+                PageMethods.ProcessIT(name, address, onSucess, onError);
+                function onSucess(result) {
+                    alert(result);
+                }
+
+                function onError(result) {
+                    alert('Something wrong.');
+                }
+
             }
         </script>
         <!--===============================================================================================-->
@@ -95,6 +110,7 @@
         </script>
         <!--===============================================================================================-->
         <script src="Scripts/main.js"></script>
+        
     </form>
 </body>
 </html>

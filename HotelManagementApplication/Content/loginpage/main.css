@@ -24,7 +24,9 @@
     font-family: Montserrat-Bold;
     src: url('../fonts/Montserrat-Bold.ttf');
 }
-
+#trans{
+    color:black;
+}
 
 #label1{
     color:red;
