@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="HotelManagementApplication.About" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AboutPage.aspx.cs" Inherits="HotelManagementApplication.AboutPage" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +13,7 @@
 
 
     <link href="Content/loginpage.css" rel="stylesheet">
-
+    <link href="Content/About/Aboutpage.css" rel="stylesheet" />
 
 
   
@@ -36,7 +36,7 @@
               <a  class="nav-link js-scroll-trigger" href="landingpage.aspx">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/About.aspx">About</a>
+              <a class="nav-link js-scroll-trigger" href="Aboutus.aspx">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="Help.aspx">Help</a>
@@ -51,10 +51,26 @@
 
  
     <header class="masthead">
-      <div class="container d-flex h-100 align-items-center">
-       
-      </div>
+      <div class="container d-flex h-25 align-items-center">
+          <div id="aboutus">Hotel Management and Booking System</div>
+         
+       </div>
+        <div id="abox">
+            <div class="content">
+                <div class="text-white-50 mx-auto mt-2 mb-2">
+                    Hotel Management System 2019
+                </div>
+                <br/>
+                <div class="text-white-50 mx-auto mt-2 mb-2">
+                    Version 1.0
+                    </div>
+                <br/>
+                <div class="text-white-50 mx-auto mt-2 mb-2">
+                    © ISoft Management
+                </div>
+            </div>
+
+       </div>
     </header>
   </body>
 </html>
-
