@@ -18,6 +18,7 @@ namespace HotelManagementApplication
            
             string param = Request.QueryString["uname"];
             uname = param.Substring(0, (param.Length));
+            
            
             try
             {
