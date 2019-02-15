@@ -11,10 +11,9 @@ namespace HotelManagementApplication
 {
     public partial class loginpage : System.Web.UI.Page
     {
-        static string gmail="";
         protected void Page_Load(object sender, EventArgs e)
         {
-            gmail = trans.Value;
+
         }
         public void loginclick(object sender, EventArgs e)
         {
@@ -39,11 +38,5 @@ namespace HotelManagementApplication
             }
 
         }
-        public static string ProcessIT(string name, string address)
-        {
-            string result = "Welcome Mr. " + name + ". Your address is '" + address + "'.";
-            return result;
-        }
-
     }
 }

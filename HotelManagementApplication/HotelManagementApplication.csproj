@@ -204,6 +204,8 @@
     <Content Include="Content\CreateBookings\CreateBookings.css" />
     <Content Include="Content\Dashboard\material-dashboard.css" />
     <Content Include="Content\Help\Help.css" />
+    <Content Include="Content\loginerr\bg.jpg" />
+    <Content Include="Content\loginerr\style.css" />
     <Content Include="Content\loginpage.css" />
     <Content Include="Content\loginpagemain.css" />
     <Content Include="Content\loginpage\animate.css" />
@@ -225,7 +227,6 @@
     <Content Include="Images\26-512.png" />
     <Content Include="Images\add.png" />
     <Content Include="Images\bg-masthead.jpg" />
-    <Content Include="Images\bg.jpg" />
     <Content Include="Images\dashboard.png" />
     <Content Include="Images\doors.jpg" />
     <Content Include="Images\i.png" />
@@ -236,6 +237,7 @@
     <Content Include="Images\user symbol.png" />
     <Content Include="Images\user.png" />
     <Content Include="Images\welcome image.jpeg" />
+    <Content Include="Loginerrorhandler.aspx" />
     <Content Include="loginpage.aspx" />
     <Content Include="Manage Bookings\Checkout.aspx" />
     <Content Include="Manage Bookings\Createbookings.aspx" />
@@ -309,6 +311,13 @@
     </Compile>
     <Compile Include="Help.aspx.designer.cs">
       <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Loginerrorhandler.aspx.cs">
+      <DependentUpon>Loginerrorhandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Loginerrorhandler.aspx.designer.cs">
+      <DependentUpon>Loginerrorhandler.aspx</DependentUpon>
     </Compile>
     <Compile Include="loginpage.aspx.cs">
       <DependentUpon>loginpage.aspx</DependentUpon>

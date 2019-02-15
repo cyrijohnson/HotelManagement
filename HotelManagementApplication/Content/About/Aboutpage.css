@@ -1,4 +1,5 @@
-﻿body {
+﻿Css file:
+body {
 }
 
 #aboutus {
@@ -38,7 +39,8 @@
     /* float: right; */
     font-size: 2em;
 }
-    .content {
+
+.content {
     padding-top: 2em;
     /* padding-right: 0em; */
     /* padding-left: 0em; */

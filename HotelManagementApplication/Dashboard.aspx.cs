@@ -18,6 +18,7 @@ namespace HotelManagementApplication
            
             string param = Request.QueryString["uname"];
             uname = param.Substring(0, (param.Length));
+            
            
             try
             {
@@ -30,7 +31,8 @@ namespace HotelManagementApplication
                 sda.Fill(dt);
                 label1.Text = Convert.ToString(dt.Rows[0][0]);
                 temp = Convert.ToString(dt.Rows[0][1]);
-                if(temp=="false")
+               
+                if (temp=="false")
                 {
                     tiletable.Visible = false;
                     alttext.Visible = true;
@@ -38,7 +40,7 @@ namespace HotelManagementApplication
             }
             catch
             {
-                label1.Text = "Username";
+                    Response.Redirect("~/Loginerrorhandler.aspx");
             }
         }
         public void configure_click(object sender, EventArgs e)
