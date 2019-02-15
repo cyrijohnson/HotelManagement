@@ -25,6 +25,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
+                <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
+        </asp:ScriptManager>
         <div class="limiter">
             <div class="container-login100">
                 <div class="wrap-login100">
@@ -71,8 +73,6 @@
                 </div>
             </div>
         </div>
-        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
-        </asp:ScriptManager>
         <script>
             function onSignIn(googleUser) {
                 var profile = googleUser.getBasicProfile();
@@ -81,19 +81,12 @@
                 console.log('Image URL: ' + profile.getImageUrl());
                 console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
                 document.getElementById("trans").value = profile.getEmail();
-                var name = "cyil";
-                var address="johnson"
-                PageMethods.ProcessIT(name, address, onSucess, onError);
-                function onSucess(result) {
-                    alert(result);
-                }
-
-                function onError(result) {
-                    alert('Something wrong.');
-                }
-
+                window.location.href = "Dashboard.aspx?uname=" + profile.getEmail();
+                
+                
             }
         </script>
+          
         <!--===============================================================================================-->
         <script src="Scripts/jquery-3.2.1.min.js"></script>
         <!--===============================================================================================-->
