@@ -1,3 +1,47 @@
 ﻿body {
+}
 
+#aboutus {
+    margin-top: 1.5em;
+    font-family: 'Varela Round';
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: .8rem;
+    background: -webkit-linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text
+}
+
+#aboutus {
+    font-size: 2rem;
+    line-height: 4rem
+}
+
+#aboutus {
+    font-size: 2rem;
+    line-height: 6.5rem;
+    letter-spacing: .5rem
+}
+
+#abox {
+    background-color: black;
+    /* margin-bottom: 15em; */
+    margin-left: 10em;
+    margin-right: 11em;
+    margin-top: 0em;
+    padding-top: 0em;
+    padding-right: 3em;
+    padding-left: 4em;
+    padding-bottom: 2em;
+    opacity: 0.5;
+    border-radius: 25px;
+    /* float: right; */
+    font-size: 2em;
+}
+    .content {
+    padding-top: 2em;
+    /* padding-right: 0em; */
+    /* padding-left: 0em; */
+    /* padding-bottom: 5em; */
+}
 }

@@ -10,6 +10,6 @@
 namespace HotelManagementApplication {
     
     
-    public partial class About {
+    public partial class AboutPage {
     }
 }

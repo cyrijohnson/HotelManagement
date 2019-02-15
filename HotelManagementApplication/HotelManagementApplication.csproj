@@ -189,7 +189,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
+    <Content Include="AboutPage.aspx" />
     <Content Include="Addassetwiz.aspx" />
     <Content Include="App_Data\SignUpDB.mdf" />
     <Content Include="App_Data\SignUpDB_log.ldf">
@@ -264,12 +264,12 @@
     <Content Include="landingpage.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="AboutPage.aspx.cs">
+      <DependentUpon>AboutPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="AboutPage.aspx.designer.cs">
+      <DependentUpon>AboutPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Addassetwiz.aspx.cs">
       <DependentUpon>Addassetwiz.aspx</DependentUpon>
