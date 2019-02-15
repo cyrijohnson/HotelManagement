@@ -111,7 +111,7 @@
       <asp:Table id="tiletable" runat="server">
                 <asp:TableRow>
                     <asp:TableCell>
-                        <div class="atile" id="tile1">
+                        <div class="atile" id="cbook">
                             <a href="Manage Bookings/Createbookings.aspx">
                             <div class="tiletext">
                                 Create Bookings
@@ -122,7 +122,7 @@
                     </asp:TableCell>
 
                     <asp:TableCell runat="server">
-                        <div class="atile" id="tile2" runat="server" onserverclick="Check_out">
+                        <div class="atile" id="outbook" runat="server" onserverclick="Check_out">
                             <a href="Manage Bookings/Checkout.aspx">
                             <div class="tiletext">
                                 Check Out
@@ -133,7 +133,7 @@
                 </asp:TableRow>
                 <asp:TableRow>
                     <asp:TableCell runat="server">
-                        <div class="atile" id="tile3">
+                        <div class="atile" id="recentbook">
                             <a href="Manage Bookings/Viewrecentbookings.aspx">
                             <div class="tiletext">
                                 View Recent Bookings
@@ -142,7 +142,7 @@
                         </div>
                     </asp:TableCell>
                     <asp:TableCell runat="server">
-                        <div class="atile" id="tile4">
+                        <div class="atile" id="upcoming">
                             <a href="Manage Bookings/Viewupcomingbookings.aspx">
                             <div class="tiletext">
                                 View Upcoming Bookings

@@ -24,7 +24,7 @@
                 </a>
             </div>
             <div class="sidebar-wrapper">
-                <a href="Createbookings.aspx">Createbookings.aspx</a>
+               
                 <ul class="nav">
                     <li class="nav-item">
                         <a class="nav-link" href="../Dashboard.aspx">
@@ -163,13 +163,13 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Address</label>
-                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Flat No." />
-                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Street Name" />
-                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="City" />
-                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="District" />
-                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="State" />
-                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Nationality" />
-                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Pincode" />
+                                                    <asp:TextBox ID="flatno" runat="server" CssClass="form-control" placeholder="Flat No." />
+                                                    <asp:TextBox ID="streetname" runat="server" CssClass="form-control" placeholder="Street Name" />
+                                                    <asp:TextBox ID="City" runat="server" CssClass="form-control" placeholder="City" />
+                                                    <asp:TextBox ID="Dist" runat="server" CssClass="form-control" placeholder="District" />
+                                                    <asp:TextBox ID="State" runat="server" CssClass="form-control" placeholder="State" />
+                                                    <asp:TextBox ID="nationality" runat="server" CssClass="form-control" placeholder="Nationality" />
+                                                    <asp:TextBox ID="Pincode" runat="server" CssClass="form-control" placeholder="Pincode" />
                                                 </div>
                                             </div>
                                         </div>
@@ -177,19 +177,19 @@
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">No. of Occuapants</label>
-                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Male" />
+                                                    <asp:TextBox ID="noofoccupantsmale" runat="server" CssClass="form-control" placeholder="Male" />
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating"></label>
-                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Female" />
+                                                    <asp:TextBox ID="noofoccupantsfemale" runat="server" CssClass="form-control" placeholder="Female" />
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating"></label>
-                                                    <asp:TextBox runat="server" CssClass="form-control" placeholder="Children" />
+                                                    <asp:TextBox ID="noofoccupantschildren" runat="server" CssClass="form-control" placeholder="Children" />
                                                 </div>
                                             </div>
                                         </div>
@@ -273,7 +273,7 @@
                         </div>
                       </div>
                     </div> -->
-                                        <button type="submit" class="btn btn-primary pull-right" runat="server">Create Booking</button>
+                                        <button type="submit" class="btn btn-primary pull-right" runat="server" onserverclick="Create_Bookings_click">Create Booking</button>
                                         <div class="clearfix"></div>
                                     </form>
                                 </div>

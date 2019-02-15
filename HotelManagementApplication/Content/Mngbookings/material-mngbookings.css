@@ -5,6 +5,8 @@
 .tiletext {
     opacity: 1.0;
     color: white;
+    /* vertical-align: middle; */
+    padding-top: 3em;
 }
 
 .tilefirst {
@@ -19,18 +21,38 @@
     cursor: pointer;
 }
 
+#cbook{
+    background-image:url(../../Images/createbook.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+    
+}
+#outbook {
+    background-image: url(../../Images/checkout.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#recentbook {
+    background-image: url(../../Images/bookinghistory.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#upcoming {
+    background-image: url(../../Images/upcoming.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .atile {
     height: 188px;
-    width: 373px;
+    width: 224px;
     background-color: #a39cb9;
     border-radius: 7px;
     text-align: center;
     margin-left: 176px;
-    margin-top: 112px;
-    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 101px;
+    background-color: rgba(0, 0, 0, 0.4);
     cursor: pointer;
 }
-
 #alttext {
     margin-left: 601px;
     color: white;

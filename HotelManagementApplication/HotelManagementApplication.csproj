@@ -199,6 +199,7 @@
     <Content Include="Contacts.aspx" />
     <Content Include="Content\About\Aboutpage.css" />
     <Content Include="Content\AddAssetWiz\Main.css" />
+    <Content Include="Content\billing\style.css" />
     <Content Include="Content\CheckOut\CheckOut.css" />
     <Content Include="Content\Contact\contact.css" />
     <Content Include="Content\CreateBookings\CreateBookings.css" />
@@ -227,6 +228,9 @@
     <Content Include="Images\26-512.png" />
     <Content Include="Images\add.png" />
     <Content Include="Images\bg-masthead.jpg" />
+    <Content Include="Images\bookinghistory.png" />
+    <Content Include="Images\checkout.png" />
+    <Content Include="Images\createbook.png" />
     <Content Include="Images\dashboard.png" />
     <Content Include="Images\doors.jpg" />
     <Content Include="Images\i.png" />
@@ -234,6 +238,7 @@
     <Content Include="Images\login-button.png" />
     <Content Include="Images\tileback.jpg" />
     <Content Include="Images\sidebar-2.jpg" />
+    <Content Include="Images\upcoming.png" />
     <Content Include="Images\user symbol.png" />
     <Content Include="Images\user.png" />
     <Content Include="Images\welcome image.jpeg" />

@@ -22,12 +22,12 @@ namespace HotelManagementApplication {
         protected global::System.Web.UI.WebControls.Table tiletable;
         
         /// <summary>
-        /// tile2 control.
+        /// outbook control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tile2;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl outbook;
     }
 }

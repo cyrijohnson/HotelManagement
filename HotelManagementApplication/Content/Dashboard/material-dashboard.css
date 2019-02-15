@@ -92,9 +92,11 @@ p {
     margin-bottom: 60px;
 
 }
-.tiletext{
-    opacity:1.0;
-    color:white;
+.tiletext {
+    opacity: 1.0;
+    color: white;
+    font-size: x-large;
+    font-weight: 400;
 }
 .tilefirst {
     height: 137px;
