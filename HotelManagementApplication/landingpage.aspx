@@ -39,7 +39,7 @@
               <a  class="nav-link js-scroll-trigger" href="landingpage.aspx">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="~/AboutPage.aspx">About</a>
+              <a class="nav-link js-scroll-trigger" href="AboutPage.aspx">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="Help.aspx">Help</a>
