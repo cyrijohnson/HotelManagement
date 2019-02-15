@@ -21,6 +21,10 @@ body {
   font-family: Arial;
 }
 
+#bill{
+    padding-left:3em;
+}
+
 header {
   padding: 10px 0;
   margin-bottom: 30px;
