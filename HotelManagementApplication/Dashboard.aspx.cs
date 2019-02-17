@@ -25,12 +25,12 @@ namespace HotelManagementApplication
                 alttext.Visible = false;
                 tiletable.Visible = true;
                 SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename =C:\Users\Cyril Johnson\Source\Repos\HotelManagement\HotelManagementApplication\App_Data\SignUpDB.mdf; Integrated Security = True");
-                SqlCommand cmd = new SqlCommand("select username,cstatus from LOGINDAT where email='" + uname + "';", con);
+                SqlCommand cmd = new SqlCommand("select usernamef,usernamel,cstatus from LOGINDAT where email='" + uname + "';", con);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
-                label1.Text = Convert.ToString(dt.Rows[0][0]);
-                temp = Convert.ToString(dt.Rows[0][1]);
+                label1.Text = Convert.ToString(dt.Rows[0][0])+ Convert.ToString(dt.Rows[0][1]);
+                temp = Convert.ToString(dt.Rows[0][2]);
                
                 if (temp=="false")
                 {

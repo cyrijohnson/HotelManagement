@@ -11,9 +11,8 @@
     <link rel="icon" type="image/png" href="Images/dashboard.png" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="Content/AddAssetWiz/Main.css" />
     <link href="Content/Dashboard/material-dashboard.css" rel="stylesheet" />
-
+    <link href="Content/AddAssetWiz/Main.css" rel="stylesheet" />
 </head>
 <body class="dark-edition">
     <form runat="server">
@@ -239,25 +238,77 @@
                                                                                 <div class="col-md-10">
                                                                                     <div class="form-group">
                                                                                         <label class="bmd-label-floating">Enter the category names and Number of Rooms</label>
-                                                                                        <hr />
-                                                                                        <table runat="server">
-                                                                                            <tr>
-                                                                                                 <asp:Panel ID="pnlTextBoxes" runat="server">
-                                                                                        </asp:Panel>
-  
-                                                                                            </tr>
-                                                                                           <tr>
-                                                                                                <asp:Panel ID="pnlTextBoxes2" runat="server">
-                                                                                        </asp:Panel>
-                                                                                           </tr>
-                                                                                        </table>
-                                                                                        
-                                                                                        <hr />
+                                                                                        <asp:Label runat="server" ID="Tableerr" Text="" CssClass="bmd-label-floating"></asp:Label>
+                                                                                        <p></p>
+                                                                                        <asp:Table runat="server" ID="Table1">
+                                                                                            <asp:TableRow runat="server">
+                                                                                                <asp:TableCell runat="server">
+                                                                                                    <asp:TextBox ID="Cat1" runat="server" type="text" placeholder="Category" CssClass="form-control" />
+                                                                                                </asp:TableCell>
+                                                                                                <asp:TableCell runat="server">
+                                                                                                    <asp:TextBox ID="Catno1" runat="server" type="text" CssClass="form-controladd" />
+                                                                                                </asp:TableCell>
+                                                                                            </asp:TableRow>
+                                                                                            <asp:TableRow runat="server">
+                                                                                                <asp:TableCell runat="server">
+                                                                                                    <asp:TextBox ID="Cat2" runat="server" type="text" placeholder="Category" CssClass="form-control" />
+                                                                                                </asp:TableCell>
+                                                                                                <asp:TableCell runat="server">
+                                                                                                    <asp:TextBox ID="Catno2" runat="server" type="text" class="form-controladd" />
+                                                                                                </asp:TableCell>
+                                                                                            </asp:TableRow>
+                                                                                             <asp:TableRow runat="server">
+                                                                                                <asp:TableCell runat="server">
+                                                                                                    <asp:TextBox ID="Cat3" runat="server" type="text" placeholder="Category" CssClass="form-control" />
+                                                                                                </asp:TableCell>
+                                                                                                <asp:TableCell runat="server">
+                                                                                                    <asp:TextBox ID="Catno3" runat="server" type="text" class="form-controladd" />
+                                                                                                </asp:TableCell>
+                                                                                            </asp:TableRow>
+                                                                                             <asp:TableRow runat="server">
+                                                                                                <asp:TableCell runat="server">
+                                                                                                    <asp:TextBox ID="Cat4" runat="server" type="text" placeholder="Category" CssClass="form-control" />
+                                                                                                </asp:TableCell>
+                                                                                                <asp:TableCell runat="server">
+                                                                                                    <asp:TextBox ID="Catno4" runat="server" type="text" class="form-controladd" />
+                                                                                                </asp:TableCell>
+                                                                                            </asp:TableRow>
+                                                                                             <asp:TableRow runat="server">
+                                                                                                <asp:TableCell runat="server">
+                                                                                                    <asp:TextBox ID="Cat5" runat="server" type="text" placeholder="Category" CssClass="form-control" />
+                                                                                                </asp:TableCell>
+                                                                                                <asp:TableCell runat="server">
+                                                                                                    <asp:TextBox ID="Catno5" runat="server" type="text" CssClass="form-controladd" />
+                                                                                                </asp:TableCell>
+                                                                                            </asp:TableRow>
+                                                                                            <asp:TableRow runat="server">
+                                                                                                <asp:TableCell runat="server">
+                                                                                                    <asp:TextBox ID="Cat6" runat="server" type="text" placeholder="Category" CssClass="form-control" />
+                                                                                                </asp:TableCell>
+                                                                                                <asp:TableCell runat="server">
+                                                                                                    <asp:TextBox ID="Catno6" runat="server" type="text" class="form-controladd" />
+                                                                                                </asp:TableCell>
+                                                                                            </asp:TableRow>
+                                                                                             <asp:TableRow runat="server">
+                                                                                                <asp:TableCell runat="server">
+                                                                                                    <asp:TextBox ID="Cat7" runat="server" type="text" placeholder="Category" CssClass="form-control" />
+                                                                                                </asp:TableCell>
+                                                                                                <asp:TableCell runat="server">
+                                                                                                    <asp:TextBox ID="Catno7" runat="server" type="text" class="form-controladd" />
+                                                                                                </asp:TableCell>
+                                                                                            </asp:TableRow>
+                                                                                             <asp:TableRow runat="server">
+                                                                                                <asp:TableCell runat="server">
+                                                                                                    <asp:TextBox ID="Cat8" runat="server" type="text" placeholder="Category" CssClass="form-control" />
+                                                                                                </asp:TableCell>
+                                                                                                <asp:TableCell runat="server">
+                                                                                                    <asp:TextBox ID="Catno8" runat="server" type="text" class="form-controladd" />
+                                                                                                </asp:TableCell>
+                                                                                            </asp:TableRow>
+                                                                                        </asp:Table>
                                                                                     </div>
                                                                                 </div>
-                                                                                 </div>
-                                                                            <asp:Button ID="btnAdd" runat="server" Text="Add New" OnClick="AddTextBox" />
-                                                                            <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="Save" />
+                                                                            </div>
                                                                             <button type="submit" runat="server" onserverclick="complete_click" class="btn btn-primary pull-right">Complete Configuration</button>
                                                                             <div class="clearfix"></div>
                                                                         </div>
@@ -266,11 +317,6 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <script>
-                                                        const x = new Date().getFullYear();
-                                                        let date = document.getElementById('date');
-                                                        date.innerHTML = '&copy; ' + x + date.innerHTML;
-                                                    </script>
                                                 </div>
                                             </td>
                                         </tr>

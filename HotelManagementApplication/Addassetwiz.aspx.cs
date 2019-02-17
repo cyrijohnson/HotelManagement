@@ -12,10 +12,18 @@ namespace HotelManagementApplication
 {
     public partial class Addassetwiz : System.Web.UI.Page
     {
-        string uname;
+        string uname,tbkey;
         protected void Page_Load(object sender, EventArgs e)
         {
-            uname = "cyril39999@gmail.com";
+            string param = Request.QueryString["uname"];
+            uname = param.Substring(0, (param.Length));
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Cyril Johnson\Source\Repos\HotelManagement\HotelManagementApplication\App_Data\SignUpDB.mdf;Integrated Security=True");
+            SqlCommand cmd2 = new SqlCommand("select usernamef,phone from LOGINDAT where email='" + uname + "';", con);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd2);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            tbkey = Convert.ToString(dt.Rows[0][0])+ Convert.ToString(dt.Rows[0][1]);
+            // uname = "cyril39999@gmail.com";
             if (!IsPostBack)
             {
                 Tab1.CssClass = "Clicked";
@@ -50,108 +58,213 @@ namespace HotelManagementApplication
         {
             this.Tab2_Click(e,e);
         }
-        public void adddata_click(object sender,EventArgs e)
+        public void adddata_click(object sender, EventArgs e)
         {
-            string bookings = "flase", agoda = "flase", trivago = "flase", oyo="flase";
+            string bookings = "flase", agoda = "flase", trivago = "flase", oyo = "flase";
             if (checkbox1.Checked)
             {
                 bookings = "true";
             }
-            if(checkbox2.Checked)
+            if (checkbox2.Checked)
             {
                 agoda = "true";
             }
-            if(checkbox3.Checked)
+            if (checkbox3.Checked)
             {
                 trivago = "true";
             }
-            if(checkbox4.Checked)
+            if (checkbox4.Checked)
             {
                 oyo = "true";
             }
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Cyril Johnson\Source\Repos\HotelManagement\HotelManagementApplication\App_Data\SignUpDB.mdf;Integrated Security=True");
-            SqlCommand cmd = new SqlCommand();
-            con.Open();
-            cmd.Connection = con;
-            cmd.CommandText = "INSERT INTO ASSETDATA(email,assetname,careof,buildingnameno,streetname,locality,city,district,state,pincode," +
-          "totalrooms,bookings,agoda,trivago,oyorooms) VALUES ('"+uname+"','"+tb1.Text+"','"+tb2.Text+"','"+tb3.Text+ "','" + tb4.Text + "'" +
-                ",'" + tb5.Text + "','" + tb6.Text + "','" + tb7.Text + "','" + tb8.Text + "','" + tb9.Text + "','"+TextBox1.Text+"','"+bookings+"'" +
-                ",'"+agoda+"','"+trivago+"','"+oyo+"');";
-            cmd.ExecuteNonQuery();
-            con.Close();
-            this.Tab3_Click(e, e);
-        }
-        protected void AddTextBox(object sender, EventArgs e)
-        {
-            int index = pnlTextBoxes.Controls.OfType<TextBox>().ToList().Count + 1;
-            this.CreateTextBox("txtDynamic" + index);
-            int index2 = pnlTextBoxes2.Controls.OfType<TextBox>().ToList().Count + 1;
-            this.CreateTextBox2("txtDynamicval" + index2);
+            insertdb();
+             void insertdb() {
+                try {
 
-        }
-
-        private void CreateTextBox(string id)
-        {
-            TextBox txt = new TextBox();
-            txt.ID = id;
-            txt.Attributes.Add("placeholder","Ex. Delux, Super Delux, Suite...");
-            txt.CssClass = "form-control";
-            pnlTextBoxes.Controls.Add(txt);
-            Literal lt = new Literal();
-            lt.Text = "<br />";
-            pnlTextBoxes.Controls.Add(lt);
-        }
-        private void CreateTextBox2(string id)
-        {
-            TextBox txt = new TextBox();
-            txt.ID = id;
-            txt.Attributes.Add("placeholder", "No. of rooms");
-            txt.CssClass = "form-control";
-            pnlTextBoxes2.Controls.Add(txt);
-            Literal lt = new Literal();
-            lt.Text = "<br />";
-            pnlTextBoxes2.Controls.Add(lt);
-        }
-
-        protected void Page_PreInit(object sender, EventArgs e)
-        {
-            List<string> keys = Request.Form.AllKeys.Where(key => key.Contains("txtDynamic")).ToList();
-            int i = 1;
-            foreach (string key in keys)
-            {
-                this.CreateTextBox("txtDynamic" + i);
-                this.CreateTextBox2("txtDynamicval" + i);
-                i++;
-            }
-        }
-        protected void Save(object sender, EventArgs e)
-        {
-            foreach (TextBox textBox in pnlTextBoxes.Controls.OfType<TextBox>())
-            {
-                string constr = ConfigurationManager.ConnectionStrings["constr"].ConnectionString;
-                using (SqlConnection con = new SqlConnection(constr))
+                    SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Cyril Johnson\Source\Repos\HotelManagement\HotelManagementApplication\App_Data\SignUpDB.mdf;Integrated Security=True");
+                    SqlCommand cmd = new SqlCommand();
+                    con.Open();
+                    cmd.Connection = con;
+                    cmd.CommandText = "INSERT INTO " + tbkey + "(email,assetname,careof,buildingnameno,streetname,locality,city,district,state,pincode," +
+                  "totalrooms,bookings,agoda,trivago,oyorooms) VALUES ('" + uname + "','" + tb1.Text + "','" + tb2.Text + "','" + tb3.Text + "','" + tb4.Text + "'" +
+                        ",'" + tb5.Text + "','" + tb6.Text + "','" + tb7.Text + "','" + tb8.Text + "','" + tb9.Text + "','" + TextBox1.Text + "','" + bookings + "'" +
+                        ",'" + agoda + "','" + trivago + "','" + oyo + "');";
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    this.Tab3_Click(e, e);
+                }
+                catch
                 {
-                    using (SqlCommand cmd = new SqlCommand("INSERT INTO Names(Name) VALUES(@Name)"))
-                    {
-                        cmd.Connection = con;
-                        cmd.Parameters.AddWithValue("@Name", textBox.Text);
-                        con.Open();
-                        cmd.ExecuteNonQuery();
-                        con.Close();
-                    }
+                    SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Cyril Johnson\Source\Repos\HotelManagement\HotelManagementApplication\App_Data\SignUpDB.mdf;Integrated Security=True");
+                    SqlCommand createuttable = new SqlCommand();
+                    con.Open();
+                    createuttable.Connection = con;
+                    createuttable.CommandText = "CREATE TABLE [dbo].["+tbkey+"] (" +
+        "[email]          VARCHAR (50) NOT NULL," +
+        "[assetname]      VARCHAR (50) NOT NULL," +
+        "[careof]         VARCHAR (50) NULL," +
+        "[buildingnameno] VARCHAR (50) NOT NULL," +
+        "[streetname]     VARCHAR (50) NULL," +
+        "[locality]       VARCHAR (50) NULL," +
+        "[city]           VARCHAR (50) NOT NULL," +
+        "[district]       VARCHAR (50) NOT NULL," +
+        "[state]          VARCHAR (50) NOT NULL," +
+        "[pincode]        VARCHAR (50) NOT NULL," +
+        "[totalrooms]     VARCHAR (50) NOT NULL," +
+        "[bookings]       VARCHAR (50) NOT NULL," +
+        "[agoda]          VARCHAR (50) NOT NULL," +
+        "[trivago]        VARCHAR (50) NOT NULL," +
+        "[oyorooms]       VARCHAR (50) NOT NULL," +
+        "[moredetid] VARCHAR(50) NULL, " +
+        "[noofassets] VARCHAR(50) DEFAULT 0 NULL, " +
+        "PRIMARY KEY CLUSTERED ([email] ASC));";
+                    createuttable.ExecuteNonQuery();
+                    con.Close();
+                    insertdb();
                 }
             }
-        }
+            }
+        
+
         public void complete_click(object sender,EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Cyril Johnson\Source\Repos\HotelManagement\HotelManagementApplication\App_Data\SignUpDB.mdf;Integrated Security=True");
-            SqlCommand cmd = new SqlCommand();
-            con.Open();
+
+            int count=0;
+            int keeper;
+           
+                if (Cat1.Text != "" && Catno1.Text != "")
+                {
+                    try
+                    {
+                        keeper = Convert.ToInt16(Catno1.Text);
+                        count++;
+                    }
+                    catch
+                    {
+                    Tableerr.Text = "*****Enter the categories in the appropriate format*****";
+                    }
+                }
+            if (Cat2.Text != "" && Catno2.Text != "")
+            {
+                try
+                {
+                    keeper = Convert.ToInt16(Catno2.Text);
+                    count++;
+                }
+                catch
+                {
+                    Tableerr.Text = "*****Enter the categories in the appropriate format*****";
+                }
+            }
+            if (Cat3.Text != "" && Catno3.Text != "")
+            {
+                try
+                {
+                    keeper = Convert.ToInt16(Catno3.Text);
+                    count++;
+                }
+                catch
+                {
+                    Tableerr.Text = "*****Enter the categories in the appropriate format*****";
+                }
+            }
+            if (Cat4.Text != "" && Catno4.Text != "")
+            {
+                try
+                {
+                    keeper = Convert.ToInt16(Catno4.Text);
+                    count++;
+                }
+                catch
+                {
+                    Tableerr.Text = "*****Enter the categories in the appropriate format*****";
+                }
+            }
+            if (Cat5.Text != "" && Catno5.Text != "")
+            {
+                try
+                {
+                    keeper = Convert.ToInt16(Catno5.Text);
+                    count++;
+                }
+                catch
+                {
+                    Tableerr.Text = "*****Enter the categories in the appropriate format*****";
+                }
+
+            }
+            if (Cat6.Text != "" && Catno6.Text != "")
+            {
+                try
+                {
+                    keeper = Convert.ToInt16(Catno6.Text);
+                    count++;
+                }
+                catch
+                {
+                    Tableerr.Text = "*****Enter the categories in the appropriate format*****";
+                }
+            }
+            if (Cat7.Text != "" && Catno7.Text != "")
+            {
+                try
+                {
+                    keeper = Convert.ToInt16(Catno7.Text);
+                    count++;
+                }
+                catch
+                {
+                    Tableerr.Text = "*****Enter the categories in the appropriate format*****";
+                }
+            }
+            if (Cat8.Text != "" && Catno8.Text != "")
+            {
+                try
+                {
+                    keeper = Convert.ToInt16(Catno8.Text);
+                    count++;
+                }
+                catch
+                {
+                    Tableerr.Text = "*****Enter the categories in the appropriate format*****";
+                }
+            }
+         
+           SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Cyril Johnson\Source\Repos\HotelManagement\HotelManagementApplication\App_Data\SignUpDB.mdf;Integrated Security=True");
+           SqlCommand cmd = new SqlCommand();
+           SqlCommand cmd2 = new SqlCommand("select noofassets from "+tbkey+" where email='" + uname + "';", con);
+           SqlDataAdapter sda = new SqlDataAdapter(cmd2);
+           DataTable dt = new DataTable();
+           sda.Fill(dt);
+           int num=Convert.ToInt16(dt.Rows[0][0])+1;
+           string tblname = tbkey + num; 
+           con.Open();
             cmd.Connection = con;
-            cmd.CommandText = "UPDATE LOGINDAT SET [cstatus]='true' WHERE [email]='"+uname+"';";
+            cmd.CommandText = "CREATE TABLE [dbo].["+tblname+"] ( [email]          VARCHAR(50) NOT NULL," +
+                "[totalrooms]     VARCHAR(50) NOT NULL," +
+                "[category1]      VARCHAR(50) NOT NULL," +
+                "[category2]      VARCHAR(50) NOT NULL," +
+                "[category3]      VARCHAR(50) NOT NULL," +
+                "[category4]      VARCHAR(50) NOT NULL," +
+                "[category5]      VARCHAR(50) NOT NULL," +
+                "[category6]      VARCHAR(50) NOT NULL," +
+                "[category7]      VARCHAR(50) NOT NULL," +
+                "[category8]      VARCHAR(50) NOT NULL," +
+                "[totcategories]      VARCHAR(50) NOT NULL," +
+                "PRIMARY KEY CLUSTERED([email] ASC));";
             cmd.ExecuteNonQuery();
+            SqlCommand cmd3 = new SqlCommand();
+            cmd3.Connection = con;
+            cmd3.CommandText = "INSERT INTO " + tblname + "(email,totalrooms,category1,category2,category3,category4,category5," +
+                "category6,category7,category8,totcategories)VALUES('"+uname+"','"+TextBox2.Text+"','"+Catno1.Text+"'," +
+                "'"+ Catno2.Text+ "','"+ Catno3.Text + "','"+ Catno4.Text + "','"+ Catno5.Text+ "','"+ Catno6.Text + "','"+ Catno7.Text+ "','"+ Catno8.Text + "'," +
+                "'"+count+"');";
+            cmd3.ExecuteNonQuery();
+            SqlCommand cmd4 = new SqlCommand("UPDATE "+tbkey+" SET noofassets='"+num+"' WHERE email='"+uname+"';",con);
+            SqlCommand cmd5 = new SqlCommand("UPDATE LOGINDAT SET cstatus='" + true + "' WHERE email='" + uname + "';", con);
+            cmd4.ExecuteNonQuery();
             con.Close();
-            Response.Redirect("Dashboard.aspx?uname=" + Server.UrlEncode(uname));
+
         }
     }
 }
