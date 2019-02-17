@@ -250,19 +250,31 @@ namespace HotelManagementApplication
                 "[category6]      VARCHAR(50) NOT NULL," +
                 "[category7]      VARCHAR(50) NOT NULL," +
                 "[category8]      VARCHAR(50) NOT NULL," +
+                "[categoryrooms1]      VARCHAR(50) NOT NULL," +
+                "[categoryrooms2]      VARCHAR(50) NOT NULL," +
+                "[categoryrooms3]      VARCHAR(50) NOT NULL," +
+                "[categoryrooms4]      VARCHAR(50) NOT NULL," +
+                "[categoryrooms5]      VARCHAR(50) NOT NULL," +
+                "[categoryrooms6]      VARCHAR(50) NOT NULL," +
+                "[categoryrooms7]      VARCHAR(50) NOT NULL," +
+                "[categoryrooms8]      VARCHAR(50) NOT NULL," +
                 "[totcategories]      VARCHAR(50) NOT NULL," +
                 "PRIMARY KEY CLUSTERED([email] ASC));";
             cmd.ExecuteNonQuery();
             SqlCommand cmd3 = new SqlCommand();
             cmd3.Connection = con;
             cmd3.CommandText = "INSERT INTO " + tblname + "(email,totalrooms,category1,category2,category3,category4,category5," +
-                "category6,category7,category8,totcategories)VALUES('"+uname+"','"+TextBox2.Text+"','"+Catno1.Text+"'," +
-                "'"+ Catno2.Text+ "','"+ Catno3.Text + "','"+ Catno4.Text + "','"+ Catno5.Text+ "','"+ Catno6.Text + "','"+ Catno7.Text+ "','"+ Catno8.Text + "'," +
-                "'"+count+"');";
+                "category6,category7,category8,categoryrooms1,categoryrooms2,categoryrooms3" +
+                ",categoryrooms4,categoryrooms5,categoryrooms6,categoryrooms7," +
+                "categoryrooms8,totcategories)VALUES('" + uname+"','"+TextBox2.Text+"','"+Cat1.Text+"','"+Cat2.Text+"','"+Cat3.Text+"'," +
+                "'"+Cat4.Text+"','"+Cat5.Text+"','"+Cat6.Text+"','"+Cat7.Text+"','"+Cat8.Text+"','"+Catno1.Text+"'," +
+                "'"+ Catno2.Text+ "','"+ Catno3.Text + "','"+ Catno4.Text + "','"+ Catno5.Text+ "','"+ Catno6.Text + "','"+ Catno7.Text+ "'," +
+                "'"+ Catno8.Text + "'," +"'"+count+"');";
             cmd3.ExecuteNonQuery();
             SqlCommand cmd4 = new SqlCommand("UPDATE "+tbkey+" SET noofassets='"+num+"' WHERE email='"+uname+"';",con);
             SqlCommand cmd5 = new SqlCommand("UPDATE LOGINDAT SET cstatus='" + true + "' WHERE email='" + uname + "';", con);
             cmd4.ExecuteNonQuery();
+            cmd5.ExecuteNonQuery();
             con.Close();
 
         }

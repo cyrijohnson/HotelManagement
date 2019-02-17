@@ -204,6 +204,7 @@
     <Content Include="Content\Contact\contact.css" />
     <Content Include="Content\CreateBookings\CreateBookings.css" />
     <Content Include="Content\Dashboard\material-dashboard.css" />
+    <Content Include="Content\Dashboard\style.css" />
     <Content Include="Content\Help\Help.css" />
     <Content Include="Content\loginerr\bg.jpg" />
     <Content Include="Content\loginerr\style.css" />
@@ -264,6 +265,8 @@
     <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\select2.min.js" />
     <Content Include="Scripts\tilt.jquery.min.js" />
+    <Content Include="ServerError.aspx" />
+    <Content Include="Settings.aspx" />
     <Content Include="SignUpPage.aspx" />
     <Content Include="test.aspx" />
     <Content Include="UserProfile.aspx" />
@@ -380,6 +383,20 @@
     </Compile>
     <Compile Include="RoomConfiguration.aspx.designer.cs">
       <DependentUpon>RoomConfiguration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServerError.aspx.cs">
+      <DependentUpon>ServerError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServerError.aspx.designer.cs">
+      <DependentUpon>ServerError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
     </Compile>
     <Compile Include="SignUpPage.aspx.cs">
       <DependentUpon>SignUpPage.aspx</DependentUpon>
