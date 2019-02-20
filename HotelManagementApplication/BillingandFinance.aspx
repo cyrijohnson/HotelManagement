@@ -17,66 +17,65 @@
   
 </head>
 <body class="dark-edition">
+    <form id="form1" runat="server">
   <div class="wrapper ">
-    <div class="sidebar" data-color="purple" data-background-color="black" data-image="Images/sidebar-2.jpg">
+    <div class="sidebar" data-color="purple" data-background-color="black" data-image="C:\Users\Cyril Johnson\Source\Repos\HotelManagement\HotelManagementApplication\Images\sidebar-2.jpg">
     
       <div class="logo">
-        <a href="landingpage.aspx" class="simple-text logo-normal">
-          iSoft
-        </a>
+      <asp:Label ID="label1" Text="ISoft" runat="server" CssClass="simple-text logo-normal" />
       </div>
       <div class="sidebar-wrapper">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="../Dashboard.aspx">
+       <ul class="nav">
+                        <li class="nav-item ">
+                            <asp:LinkButton ID="LinkButton1" CssClass="nav-link" OnClick="dashclick" runat="server">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="../UserProfile.aspx">
+                            </asp:LinkButton>
+                        </li>
+                        <li class="nav-item">
+                            <asp:LinkButton ID="LinkButton2" CssClass="nav-link" OnClick="userproclick" runat="server">
               <i class="material-icons">person</i>
               <p>User Profile</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../ManageBookings.aspx">
+                            </asp:LinkButton>
+                        </li>
+                        <li class="nav-item ">
+                            <asp:LinkButton ID="LinkButton3" CssClass="nav-link" OnClick="managebookingclick" runat="server">
               <i class="material-icons">book</i>
               <p>Manage Bookings</p>
-            </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="BillingandFinance.aspx">
-              <i class="material-icons">printer</i>
+                            </asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                             <asp:LinkButton ID="LinkButton4" CssClass="nav-link" OnClick="billingclick" runat="server">
+              <i class="material-icons">book</i>
               <p>Billing and Finance</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./typography.html">
-              <i class="material-icons">poll</i>
-              <p>Smart Manager</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./icons.html">
-              <i class="material-icons">lock</i>
-              <p>Credential Manager</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./map.html">
-              <i class="material-icons">android</i>
-              <p>Restaurant Manager</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./notifications.html">
-              <i class="material-icons">settings</i>
-              <p>Settings</p>
-            </a>
-          </li>
-       
-        </ul>
+                            </asp:LinkButton>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./typography.html">
+                                <i class="material-icons">poll</i>
+                                <p>Smart Manager</p>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./icons.html">
+                                <i class="material-icons">lock</i>
+                                <p>Credential Manager</p>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./map.html">
+                                <i class="material-icons">android</i>
+                                <p>Restaurant Manager</p>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./notifications.html">
+                                <i class="material-icons">settings</i>
+                                <p>Settings</p>
+                            </a>
+                        </li>
+
+                    </ul>
       </div>
     </div>
     <div class="main-panel">
@@ -166,5 +165,6 @@
       </div>
     </div>
   </div>
+        </form>
 </body>
 </html>

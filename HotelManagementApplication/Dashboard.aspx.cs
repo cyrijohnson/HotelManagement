@@ -47,5 +47,21 @@ namespace HotelManagementApplication
         {
             Response.Redirect("RoomConfiguration.aspx?uname=" + Server.UrlEncode(uname));
         }
+        public void dashclick(object sender, EventArgs e)
+        {
+            Response.Redirect("Dashboard.aspx?uname=" + Server.UrlEncode(uname));
+        }
+        public void userproclick(object sender, EventArgs e)
+        {
+            Response.Redirect("UserProfile.aspx?uname=" + Server.UrlEncode(uname));
+        }
+        public void managebookingclick(object sender, EventArgs e)
+        {
+            Response.Redirect("ManageBookings.aspx?uname=" + Server.UrlEncode(uname));
+        }
+        public void billingclick(object sender, EventArgs e)
+        {
+            Response.Redirect("BillingandFinance.aspx?uname=" + Server.UrlEncode(uname));
+        }
     }
 }

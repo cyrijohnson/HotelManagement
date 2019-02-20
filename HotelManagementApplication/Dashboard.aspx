@@ -27,30 +27,29 @@
                 <div class="sidebar-wrapper">
                    
                     <ul class="nav">
-                        
-                        <li class="nav-item active  ">
-                            <a class="nav-link" href="Dashboard.aspx">
-                                <i class="material-icons">dashboard</i>
-                                <p>Dashboard</p>
-                            </a>
+                        <li class="nav-item active">
+                            <asp:LinkButton ID="LinkButton1" CssClass="nav-link" OnClick="dashclick" runat="server">
+              <i class="material-icons">dashboard</i>
+              <p>Dashboard</p>
+                            </asp:LinkButton>
+                        </li>
+                        <li class="nav-item">
+                            <asp:LinkButton ID="LinkButton2" CssClass="nav-link" OnClick="userproclick" runat="server">
+              <i class="material-icons">person</i>
+              <p>User Profile</p>
+                            </asp:LinkButton>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="UserProfile.aspx">
-                                <i class="material-icons">person</i>
-                                <p>User Profile</p>
-                            </a>
+                            <asp:LinkButton ID="LinkButton3" CssClass="nav-link" OnClick="managebookingclick" runat="server">
+              <i class="material-icons">book</i>
+              <p>Manage Bookings</p>
+                            </asp:LinkButton>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="ManageBookings.aspx">
-                                <i class="material-icons">book</i>
-                                <p>Manage Bookings</p>
-                            </a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="BillingandFinance.aspx">
-                                <i class="material-icons">printer</i>
-                                <p>Billing and Finance</p>
-                            </a>
+                             <asp:LinkButton ID="LinkButton4" CssClass="nav-link" OnClick="billingclick" runat="server">
+              <i class="material-icons">book</i>
+              <p>Billing and Finance</p>
+                            </asp:LinkButton>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="./typography.html">
@@ -79,14 +78,7 @@
 
                     </ul>
                 </div>
-            </div>
-            
-           
-            
-            
-            
-           
-            
+            </div>    
             <asp:Table id="tiletable" runat="server">
                 <asp:TableRow>
                     <asp:TableCell runat="server">
