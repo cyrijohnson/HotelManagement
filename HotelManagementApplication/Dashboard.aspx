@@ -70,10 +70,10 @@
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="./notifications.html">
+                            <asp:LinkButton ID="LinkButton5" CssClass="nav-link" OnClick="settingsclick" runat="server">
                                 <i class="material-icons">settings</i>
                                 <p>Settings</p>
-                            </a>
+                            </asp:LinkButton>
                         </li>
 
                     </ul>

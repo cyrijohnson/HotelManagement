@@ -27,6 +27,8 @@
                                 OnClick="Tab2_Click" />
                             <asp:Button Text="Room Configuration" BorderStyle="None" ID="Tab3" CssClass="Initial" runat="server"
                                 OnClick="Tab3_Click" />
+                            <asp:Button Text="Room Numbering" BorderStyle="None" ID="Tab4" CssClass="Initial" runat="server"
+                                OnClick="Tab4_Click" />
                             <asp:MultiView ID="MainView" runat="server">
                                 <asp:View ID="View1" runat="server">
                                     <table style="width: 100%; border-width: 1px; border-color: #666; border-style: solid" runat="server">
@@ -317,6 +319,40 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </asp:View>
+                                 <asp:View ID="View4" runat="server">
+                                    <table style="width: 100%; border-width: 1px; border-color: #666; border-style: solid">
+                                        <tr>
+                                            <td>
+                                                <div class="main-panelA">
+                                                    <div class="content">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-8">
+                                                                    <div class="card">
+                                                                        <div class="card-header card-header-primary">
+                                                                            <h4 class="card-title">Configuration</h4>
+                                                                            <p class="card-category">Please enter custom room numbers</p>
+                                                                        </div>
+                                                                        <div class="card-body">
+                                                                              <asp:Panel runat="server" ID="roompanel">
+
+                                                                              </asp:Panel>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        const x = new Date().getFullYear();
+                                                        let date = document.getElementById('date');
+                                                        date.innerHTML = '&copy; ' + x + date.innerHTML;
+                                                    </script>
                                                 </div>
                                             </td>
                                         </tr>

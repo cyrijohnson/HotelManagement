@@ -36,6 +36,7 @@ namespace HotelManagementApplication
             Tab1.CssClass = "Clicked";
             Tab2.CssClass = "Initial";
             Tab3.CssClass = "Initial";
+            Tab4.CssClass = "Initial";
             MainView.ActiveViewIndex = 0;
         }
 
@@ -44,6 +45,7 @@ namespace HotelManagementApplication
             Tab1.CssClass = "Initial";
             Tab2.CssClass = "Clicked";
             Tab3.CssClass = "Initial";
+            Tab4.CssClass = "Initial";
             MainView.ActiveViewIndex = 1;
         }
 
@@ -52,7 +54,19 @@ namespace HotelManagementApplication
             Tab1.CssClass = "Initial";
             Tab2.CssClass = "Initial";
             Tab3.CssClass = "Clicked";
+            Tab4.CssClass = "Initial";
             MainView.ActiveViewIndex = 2;
+        }
+        protected void Tab4_Click(object sender, EventArgs e)
+        {
+            Tab1.CssClass = "Initial";
+            Tab2.CssClass = "Initial";
+            Tab3.CssClass = "Initial";
+            Tab4.CssClass = "Clicked";
+            MainView.ActiveViewIndex = 3;
+        
+
+
         }
         public void address_click(object sender,EventArgs e)
         {
@@ -79,16 +93,18 @@ namespace HotelManagementApplication
             }
             insertdb();
              void insertdb() {
+                Random rand = new Random();
+                long moreid=rand.Next(100000,999999);
                 try {
 
                     SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Cyril Johnson\Source\Repos\HotelManagement\HotelManagementApplication\App_Data\SignUpDB.mdf;Integrated Security=True");
                     SqlCommand cmd = new SqlCommand();
                     con.Open();
                     cmd.Connection = con;
-                    cmd.CommandText = "INSERT INTO " + tbkey + "(email,assetname,careof,buildingnameno,streetname,locality,city,district,state,pincode," +
-                  "totalrooms,bookings,agoda,trivago,oyorooms) VALUES ('" + uname + "','" + tb1.Text + "','" + tb2.Text + "','" + tb3.Text + "','" + tb4.Text + "'" +
+                    cmd.CommandText = "INSERT INTO " + tb1.Text + "(email,assetname,careof,buildingnameno,streetname,locality,city,district,state,pincode," +
+                  "totalrooms,bookings,agoda,trivago,oyorooms,moredetid) VALUES ('" + uname + "','" + tb1.Text + "','" + tb2.Text + "','" + tb3.Text + "','" + tb4.Text + "'" +
                         ",'" + tb5.Text + "','" + tb6.Text + "','" + tb7.Text + "','" + tb8.Text + "','" + tb9.Text + "','" + TextBox1.Text + "','" + bookings + "'" +
-                        ",'" + agoda + "','" + trivago + "','" + oyo + "');";
+                        ",'" + agoda + "','" + trivago + "','" + oyo + "','"+moreid+"');";
                     cmd.ExecuteNonQuery();
                     con.Close();
                     this.Tab3_Click(e, e);
@@ -99,7 +115,7 @@ namespace HotelManagementApplication
                     SqlCommand createuttable = new SqlCommand();
                     con.Open();
                     createuttable.Connection = con;
-                    createuttable.CommandText = "CREATE TABLE [dbo].["+tbkey+"] (" +
+                    createuttable.CommandText = "CREATE TABLE [dbo].["+tb1.Text+"] (" +
         "[email]          VARCHAR (50) NOT NULL," +
         "[assetname]      VARCHAR (50) NOT NULL," +
         "[careof]         VARCHAR (50) NULL," +
@@ -116,7 +132,6 @@ namespace HotelManagementApplication
         "[trivago]        VARCHAR (50) NOT NULL," +
         "[oyorooms]       VARCHAR (50) NOT NULL," +
         "[moredetid] VARCHAR(50) NULL, " +
-        "[noofassets] VARCHAR(50) DEFAULT 0 NULL, " +
         "PRIMARY KEY CLUSTERED ([email] ASC));";
                     createuttable.ExecuteNonQuery();
                     con.Close();
@@ -229,16 +244,15 @@ namespace HotelManagementApplication
                     Tableerr.Text = "*****Enter the categories in the appropriate format*****";
                 }
             }
-         
+
            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Cyril Johnson\Source\Repos\HotelManagement\HotelManagementApplication\App_Data\SignUpDB.mdf;Integrated Security=True");
            SqlCommand cmd = new SqlCommand();
-           SqlCommand cmd2 = new SqlCommand("select noofassets from "+tbkey+" where email='" + uname + "';", con);
+           SqlCommand cmd2 = new SqlCommand("select assetname,moredetid from " +tb1.Text+" where email='" + uname + "';", con);
            SqlDataAdapter sda = new SqlDataAdapter(cmd2);
            DataTable dt = new DataTable();
            sda.Fill(dt);
-           int num=Convert.ToInt16(dt.Rows[0][0])+1;
-           string tblname = tbkey + num; 
-           con.Open();
+            string tblname = Convert.ToString(dt.Rows[0][0])+ Convert.ToString(dt.Rows[0][1]);
+            con.Open();
             cmd.Connection = con;
             cmd.CommandText = "CREATE TABLE [dbo].["+tblname+"] ( [email]          VARCHAR(50) NOT NULL," +
                 "[totalrooms]     VARCHAR(50) NOT NULL," +
@@ -271,12 +285,22 @@ namespace HotelManagementApplication
                 "'"+ Catno2.Text+ "','"+ Catno3.Text + "','"+ Catno4.Text + "','"+ Catno5.Text+ "','"+ Catno6.Text + "','"+ Catno7.Text+ "'," +
                 "'"+ Catno8.Text + "'," +"'"+count+"');";
             cmd3.ExecuteNonQuery();
-            SqlCommand cmd4 = new SqlCommand("UPDATE "+tbkey+" SET noofassets='"+num+"' WHERE email='"+uname+"';",con);
+            SqlCommand incasset = new SqlCommand("SELECT noofassets FROM LOGINDAT WHERE email='"+uname+"'");
+            incasset.Connection = con;
+            SqlDataAdapter asetinc = new SqlDataAdapter(incasset);
+            DataTable noofasset = new DataTable();
+            asetinc.Fill(noofasset);
+            int num = Convert.ToInt16(noofasset.Rows[0][0]) + 1;
+            SqlCommand updatenumofassets = new SqlCommand("UPDATE LOGINDAT SET noofassets='"+num+"' WHERE email='"+uname+"'");
+            updatenumofassets.Connection = con;
+            updatenumofassets.ExecuteNonQuery();
             SqlCommand cmd5 = new SqlCommand("UPDATE LOGINDAT SET cstatus='" + true + "' WHERE email='" + uname + "';", con);
-            cmd4.ExecuteNonQuery();
+            cmd5.Connection = con;
             cmd5.ExecuteNonQuery();
             con.Close();
-
+            this.Tab4_Click(sender,e);
         }
+       
     }
+    
 }

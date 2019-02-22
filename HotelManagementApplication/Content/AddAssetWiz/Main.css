@@ -7,8 +7,7 @@
     /* background-color: #F44336; */
     font-weight: bold;
     /* border-radius: 1em; */
-    padding: 5px 38px 3px 49px;
-
+    padding: 5px 38px 3px 39px;
     background: linear-gradient(60deg, #7b1fa2, #913f9e);
 }
 
@@ -43,6 +42,7 @@
     padding: 5px 38px 3px 49px;
     font-weight: bold;
     color: White;
+    border-radius:1em;
     /* border-radius: 1em; */
 }
 

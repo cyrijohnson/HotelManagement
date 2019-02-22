@@ -43,5 +43,9 @@ namespace HotelManagementApplication
         {
             Response.Redirect("BillingandFinance.aspx?uname=" + Server.UrlEncode(uname));
         }
+        public void settingsclick(object sender, EventArgs e)
+        {
+            Response.Redirect("Settings.aspx?uname=" + Server.UrlEncode(uname));
+        }
     }
 }
